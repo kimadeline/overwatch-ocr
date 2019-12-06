@@ -1,0 +1,85 @@
+import plotly.graph_objects as go
+import json
+
+from collections import defaultdict
+
+
+def team_colors(team):
+    if team == "USA":
+        return "blue"
+    else:
+        return "red"
+
+
+def datapoints(player_data):
+    datapoints = {"x": [], "y": [], "text": [], "color": []}
+    for interval in player_data["intervals"]:
+        start = int(interval["start"])
+        end = int(interval["end"]) + 1
+        for frame in range(start, end):
+            datapoints["x"].append(frame)
+            datapoints["y"].append(1)
+            datapoints["text"].append(f"{player_data['name']}<br>{player_data['role']}")
+            datapoints["color"].append(team_colors(player_data["team"]))
+            add_team_stats(player_data["team"])
+            add_role_stats(player_data["role"])
+    return datapoints
+
+
+stats = {"teams": defaultdict(int), "roles": defaultdict(int)}
+
+
+# team parameter = player_data["team"]
+def add_team_stats(team):
+    stats["teams"][team] += 1
+
+
+# role parameter = player_data["role"]
+def add_role_stats(role):
+    stats["roles"][role] += 1
+
+
+# USA / CHN
+def compute_team_stats(team1, team2):
+    total = sum(stats["teams"].values())
+
+    team1_percentage = stats["teams"][team1] / total * 100
+    team2_percentage = stats["teams"][team2] / total * 100
+
+    return {team1: team1_percentage, team2: team2_percentage}
+
+
+def compute_role_stats():
+    total = sum(stats["roles"].values())
+    result = {}
+    for key, value in stats["roles"].items():
+        result[key] = value / total * 100
+
+    return result
+
+
+with open("data/pov_data.json") as p:
+    pov_data = json.load(p)
+
+x = []
+y = []
+text = []
+color = []
+for player in pov_data:
+    player_datapoints = datapoints(player)
+    x += player_datapoints["x"]
+    y += player_datapoints["y"]
+    text += player_datapoints["text"]
+    color += player_datapoints["color"]
+
+team_stats = compute_team_stats("USA", "CHN")
+role_stats = compute_role_stats()
+print(f"team stats: {team_stats} - role stats: {role_stats}")
+
+fig = go.Figure(
+    data=go.Scatter(
+        x=x, y=y, mode="markers", text=text, marker={"symbol": "square", "color": color}
+    )
+)
+fig.show()
+
