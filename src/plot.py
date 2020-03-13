@@ -58,16 +58,25 @@ def role_datapoints(player_data):
 
 
 # team parameter = player_data["team"]
-def add_team_stats(team):
-    stats["teams"][team] += 1
+def add_team_stats(team, count=1):
+    stats["teams"][team] += count
 
 
 # role parameter = player_data["role"]
-def add_role_stats(role):
-    stats["roles"][role] += 1
+def add_role_stats(role, count=1):
+    stats["roles"][role] += count
 
 
 # USA / CHN
+def compute_game_stats(pov_data):
+    for player_data in pov_data:
+        for interval in player_data["intervals"]:
+            start = int(interval["start"])
+            end = int(interval["end"]) + 1
+            add_team_stats(player_data["team"], end - start)
+            add_role_stats(player_data["role"], end - start)
+
+
 def compute_team_stats(team1, team2):
     total = sum(stats["teams"].values())
 
@@ -88,10 +97,7 @@ def compute_role_stats():
 
 # type is either "TEAM" (team comparison red vs blue)
 # or "ROLE" (role comparison)
-def display_single_plot(type):
-    with open("data/_pov_data.json") as p:
-        pov_data = json.load(p)
-
+def display_single_plot(pov_data, type):
     x = []
     y = []
     text = []
@@ -118,8 +124,12 @@ def display_single_plot(type):
 
 
 if __name__ == "__main__":
-    display_single_plot("ROLE")
+    with open("data/_pov_data.json") as p:
+        pov_data = json.load(p)
 
+    display_single_plot(pov_data, "ROLE")
+
+    compute_game_stats(pov_data)
     team_stats = compute_team_stats("USA", "CHN")
     role_stats = compute_role_stats()
     print(f"team stats: {team_stats} - role stats: {role_stats}")
