@@ -86,7 +86,9 @@ def compute_role_stats():
     return result
 
 
-if __name__ == "__main__":
+# type is either "TEAM" (team comparison red vs blue)
+# or "ROLE" (role comparison)
+def display_single_plot(type):
     with open("data/_pov_data.json") as p:
         pov_data = json.load(p)
 
@@ -95,7 +97,9 @@ if __name__ == "__main__":
     text = []
     color = []
     for player in pov_data:
-        player_datapoints = role_datapoints(player)  # or team_datapoints(player)
+        player_datapoints = (
+            role_datapoints(player) if type == "ROLE" else team_datapoints(player)
+        )
         x += player_datapoints["x"]
         y += player_datapoints["y"]
         text += player_datapoints["text"]
@@ -111,6 +115,10 @@ if __name__ == "__main__":
         )
     )
     fig.show()
+
+
+if __name__ == "__main__":
+    display_single_plot("ROLE")
 
     team_stats = compute_team_stats("USA", "CHN")
     role_stats = compute_role_stats()
