@@ -4,11 +4,16 @@ import json
 from collections import defaultdict
 
 
+stats = {"teams": defaultdict(int), "roles": defaultdict(int)}
+
+
 def team_colors(team):
     if team == "USA":
         return "blue"
-    else:
+    elif team == "CHN":
         return "red"
+    else:  # This shouldn't happen
+        return "black"
 
 
 def role_colors(role):
