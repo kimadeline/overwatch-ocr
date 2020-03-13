@@ -11,7 +11,18 @@ def team_colors(team):
         return "red"
 
 
-def datapoints(player_data):
+def role_colors(role):
+    if role == "Tank":
+        return "Goldenrod"
+    elif role == "Damage":
+        return "HotPink"
+    elif role == "Support":
+        return "LimeGreen"
+    else:  # This shouldn't happen
+        return "black"
+
+
+def team_datapoints(player_data):
     datapoints = {"x": [], "y": [], "text": [], "color": []}
     for interval in player_data["intervals"]:
         start = int(interval["start"])
@@ -26,7 +37,19 @@ def datapoints(player_data):
     return datapoints
 
 
-stats = {"teams": defaultdict(int), "roles": defaultdict(int)}
+def role_datapoints(player_data):
+    datapoints = {"x": [], "y": [], "text": [], "color": []}
+    for interval in player_data["intervals"]:
+        start = int(interval["start"])
+        end = int(interval["end"]) + 1
+        for frame in range(start, end):
+            datapoints["x"].append(frame)
+            datapoints["y"].append(1)
+            datapoints["text"].append(f"{player_data['name']}<br>{player_data['team']}")
+            datapoints["color"].append(role_colors(player_data["role"]))
+            add_team_stats(player_data["team"])
+            add_role_stats(player_data["role"])
+    return datapoints
 
 
 # team parameter = player_data["team"]
