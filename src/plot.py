@@ -81,28 +81,32 @@ def compute_role_stats():
     return result
 
 
-with open("data/pov_data.json") as p:
-    pov_data = json.load(p)
+if __name__ == "__main__":
+    with open("data/_pov_data.json") as p:
+        pov_data = json.load(p)
 
-x = []
-y = []
-text = []
-color = []
-for player in pov_data:
-    player_datapoints = datapoints(player)
-    x += player_datapoints["x"]
-    y += player_datapoints["y"]
-    text += player_datapoints["text"]
-    color += player_datapoints["color"]
+    x = []
+    y = []
+    text = []
+    color = []
+    for player in pov_data:
+        player_datapoints = role_datapoints(player)  # or team_datapoints(player)
+        x += player_datapoints["x"]
+        y += player_datapoints["y"]
+        text += player_datapoints["text"]
+        color += player_datapoints["color"]
 
-team_stats = compute_team_stats("USA", "CHN")
-role_stats = compute_role_stats()
-print(f"team stats: {team_stats} - role stats: {role_stats}")
-
-fig = go.Figure(
-    data=go.Scatter(
-        x=x, y=y, mode="markers", text=text, marker={"symbol": "square", "color": color}
+    fig = go.Figure(
+        data=go.Scatter(
+            x=x,
+            y=y,
+            mode="markers",
+            text=text,
+            marker={"symbol": "square", "color": color},
+        )
     )
-)
-fig.show()
+    fig.show()
 
+    team_stats = compute_team_stats("USA", "CHN")
+    role_stats = compute_role_stats()
+    print(f"team stats: {team_stats} - role stats: {role_stats}")
