@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
+
 import plotly.graph_objects as go
 import json
 
@@ -37,8 +42,6 @@ def team_datapoints(player_data):
             datapoints["y"].append(1)
             datapoints["text"].append(f"{player_data['name']}<br>{player_data['role']}")
             datapoints["color"].append(team_colors(player_data["team"]))
-            add_team_stats(player_data["team"])
-            add_role_stats(player_data["role"])
     return datapoints
 
 
@@ -52,8 +55,6 @@ def role_datapoints(player_data):
             datapoints["y"].append(1)
             datapoints["text"].append(f"{player_data['name']}<br>{player_data['team']}")
             datapoints["color"].append(role_colors(player_data["role"]))
-            add_team_stats(player_data["team"])
-            add_role_stats(player_data["role"])
     return datapoints
 
 
@@ -97,7 +98,7 @@ def compute_role_stats():
 
 # type is either "TEAM" (team comparison red vs blue)
 # or "ROLE" (role comparison)
-def display_single_plot(pov_data, type):
+def get_datapoints(pov_data, type):
     x = []
     y = []
     text = []
@@ -111,23 +112,83 @@ def display_single_plot(pov_data, type):
         text += player_datapoints["text"]
         color += player_datapoints["color"]
 
+    return {x: x, y: y, text: text, color: color}
+
+
+# Datapoint keys: x, y, text and color
+def display_plot(datapoints):
     fig = go.Figure(
         data=go.Scatter(
-            x=x,
-            y=y,
+            x=datapoints.x,
+            y=datapoints.y,
             mode="markers",
-            text=text,
-            marker={"symbol": "square", "color": color},
+            text=datapoints.text,
+            marker={"symbol": "square", "color": datapoints.color},
         )
     )
     fig.show()
+
+
+def display_dashboard(pov_data):
+    external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
+
+    app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
+    role_points = get_datapoints(pov_data, "ROLE")
+    team_points = get_datapoints(pov_data, "TEAM")
+
+    app.layout = html.Div(
+        children=[
+            html.H1(children="Hello Dash"),
+            html.Div(
+                children="""
+        Dash: A web application framework for Python.
+    """
+            ),
+            dcc.Graph(
+                id="role-graph",
+                figure={
+                    "data": [
+                        go.Scatter(
+                            x=role_points.x,
+                            y=role_points.y,
+                            mode="markers",
+                            text=role_points.text,
+                            marker={"symbol": "square", "color": role_points.color},
+                        )
+                    ],
+                    "layout": {"title": "Graph one"},
+                },
+            ),
+            dcc.Graph(
+                id="team-graph",
+                figure={
+                    "data": [
+                        go.Scatter(
+                            x=team_points.x,
+                            y=team_points.y,
+                            mode="markers",
+                            text=team_points.text,
+                            marker={"symbol": "square", "color": team_points.color},
+                        )
+                    ],
+                    "layout": {"title": "Graph two"},
+                },
+            ),
+        ]
+    )
+
+    app.run_server(debug=True)
 
 
 if __name__ == "__main__":
     with open("data/_pov_data.json") as p:
         pov_data = json.load(p)
 
-    display_single_plot(pov_data, "ROLE")
+    display_dashboard(pov_data)
+
+    # datapoints = get_datapoints(pov_data, "ROLE")
+    # display_plot(datapoints)
 
     compute_game_stats(pov_data)
     team_stats = compute_team_stats("USA", "CHN")
