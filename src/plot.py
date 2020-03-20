@@ -84,7 +84,7 @@ def compute_team_stats(team1, team2):
     team1_percentage = stats["teams"][team1] / total * 100
     team2_percentage = stats["teams"][team2] / total * 100
 
-    return {team1: team1_percentage, team2: team2_percentage}
+    return {"team1": team1_percentage, "team2": team2_percentage}
 
 
 def compute_role_stats():
@@ -112,7 +112,7 @@ def get_datapoints(pov_data, type):
         text += player_datapoints["text"]
         color += player_datapoints["color"]
 
-    return {x: x, y: y, text: text, color: color}
+    return {"x": x, "y": y, "text": text, "color": color}
 
 
 # Datapoint keys: x, y, text and color
@@ -139,10 +139,10 @@ def display_dashboard(pov_data):
 
     app.layout = html.Div(
         children=[
-            html.H1(children="Hello Dash"),
+            html.H1(children="I have no idea what I'm doing"),
             html.Div(
                 children="""
-        Dash: A web application framework for Python.
+        Game: OWWC 2019 - USA vs China
     """
             ),
             dcc.Graph(
@@ -150,14 +150,14 @@ def display_dashboard(pov_data):
                 figure={
                     "data": [
                         go.Scatter(
-                            x=role_points.x,
-                            y=role_points.y,
+                            x=role_points["x"],
+                            y=role_points["y"],
                             mode="markers",
-                            text=role_points.text,
-                            marker={"symbol": "square", "color": role_points.color},
+                            text=role_points["text"],
+                            marker={"symbol": "square", "color": role_points["color"]},
                         )
                     ],
-                    "layout": {"title": "Graph one"},
+                    "layout": {"title": "Role distribution"},
                 },
             ),
             dcc.Graph(
@@ -165,14 +165,14 @@ def display_dashboard(pov_data):
                 figure={
                     "data": [
                         go.Scatter(
-                            x=team_points.x,
-                            y=team_points.y,
+                            x=team_points["x"],
+                            y=team_points["y"],
                             mode="markers",
-                            text=team_points.text,
-                            marker={"symbol": "square", "color": team_points.color},
+                            text=team_points["text"],
+                            marker={"symbol": "square", "color": team_points["color"]},
                         )
                     ],
-                    "layout": {"title": "Graph two"},
+                    "layout": {"title": "Team distribution"},
                 },
             ),
         ]
