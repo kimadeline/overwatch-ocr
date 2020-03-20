@@ -5,7 +5,7 @@ import re
 from . import ROOT_DIR
 from tinydb import TinyDB, Query
 
-OWWC_DATABASE = os.path.join(ROOT_DIR, "data/owwc.json")
+OWWC_DATABASE = os.path.join(ROOT_DIR, "data/teams.json")
 GAME_DATABASE = os.path.join("data/game.json")
 POV_DATABASE = os.path.join("data/pov.json")
 
@@ -69,4 +69,3 @@ def get_frames(player):
     player_frames = game_db.search(Frames.player.matches(player, flags=re.IGNORECASE))
 
     return sorted([f["frame"] for f in player_frames])
-
