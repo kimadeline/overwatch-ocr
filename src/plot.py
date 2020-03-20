@@ -125,12 +125,7 @@ def start_dashboard_server(pov_data, team_stats, role_stats):
 
     app.layout = html.Div(
         children=[
-            html.H1(children="I have no idea what I'm doing"),
-            html.Div(
-                children="""
-        Game: OWWC 2019 - USA vs China
-    """
-            ),
+            html.H2(children="Game: OWWC 2019 - USA vs China"),
             html.Div(children=f"team stats: {team_stats} - role stats: {role_stats}"),
             dcc.Graph(
                 id="role-graph",
