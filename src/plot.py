@@ -115,21 +115,7 @@ def get_datapoints(pov_data, type):
     return {"x": x, "y": y, "text": text, "color": color}
 
 
-# Datapoint keys: x, y, text and color
-def display_plot(datapoints):
-    fig = go.Figure(
-        data=go.Scatter(
-            x=datapoints.x,
-            y=datapoints.y,
-            mode="markers",
-            text=datapoints.text,
-            marker={"symbol": "square", "color": datapoints.color},
-        )
-    )
-    fig.show()
-
-
-def display_dashboard(pov_data, team_stats, role_stats):
+def start_dashboard_server(pov_data, team_stats, role_stats):
     external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 
     app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
@@ -182,18 +168,41 @@ def display_dashboard(pov_data, team_stats, role_stats):
     app.run_server(debug=True)
 
 
-if __name__ == "__main__":
-    with open("data/_pov_data.json") as p:
+# Datapoint keys: x, y, text and color
+def generate_graph(datapoints):
+    fig = go.Figure(
+        data=go.Scatter(
+            x=datapoints.x,
+            y=datapoints.y,
+            mode="markers",
+            text=datapoints.text,
+            marker={"symbol": "square", "color": datapoints.color},
+        )
+    )
+
+    return fig
+
+
+def display_graph(filepath="data/_pov_data.json"):
+    with open(filepath) as p:
         pov_data = json.load(p)
 
     compute_game_stats(pov_data)
     team_stats = compute_team_stats("USA", "CHN")
     role_stats = compute_role_stats()
 
-    # Display a single graph
-    # datapoints = get_datapoints(pov_data, "ROLE")
-    # display_plot(datapoints)
-    # print(f"team stats: {team_stats} - role stats: {role_stats}")
+    datapoints = get_datapoints(pov_data, "ROLE")
+    figure = generate_graph(datapoints)
+    print(f"team stats: {team_stats} - role stats: {role_stats}")
+    figure.show()
 
-    # Display a simplistic dashboard
-    display_dashboard(pov_data, team_stats, role_stats)
+
+def display_dashboard(filepath="data/_pov_data.json"):
+    with open(filepath) as p:
+        pov_data = json.load(p)
+
+    compute_game_stats(pov_data)
+    team_stats = compute_team_stats("USA", "CHN")
+    role_stats = compute_role_stats()
+
+    start_dashboard_server(pov_data, team_stats, role_stats)
