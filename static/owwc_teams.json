@@ -1,0 +1,303 @@
+{
+    "_default": {},
+    "teams": {
+        "1": {
+            "name": "USA",
+            "shorthand": "USA",
+            "players": [
+                "Corey",
+                "KSF",
+                "sinatraa",
+                "SPACE",
+                "super",
+                "moth",
+                "Rawkus"
+            ]
+        },
+        "2": {
+            "name": "France",
+            "shorthand": "FRA",
+            "players": [
+                "SoOn",
+                "Leaf",
+                "Hqrdest",
+                "Tek36",
+                "Chubz",
+                "FDGoD",
+                "HyP"
+            ]
+        },
+        "3": {
+            "name": "South Korea",
+            "shorthand": "KOR",
+            "players": [
+                "Carpe",
+                "Architect",
+                "Haksal",
+                "ChoiHyoBin",
+                "Mano",
+                "iDK",
+                "Bdosin"
+            ]
+        },
+        "4": {
+            "name": "China",
+            "shorthand": "CHN",
+            "players": [
+                "JinMu",
+                "Eileen",
+                "Elsa",
+                "guxue",
+                "Kyo",
+                "Yveltal"
+            ]
+        },
+        "5": {
+            "name": "Netherlands",
+            "shorthand": "NLD",
+            "players": [
+                "A10",
+                "Jona",
+                "Vizility",
+                "Brussen",
+                "daans",
+                "Trispear",
+                "CrusaDe"
+            ]
+        },
+        "6": {
+            "name": "Denmark",
+            "shorthand": "DNK",
+            "players": [
+                "Shax",
+                "Naga",
+                "Fischer",
+                "Molf1g",
+                "Henningsen",
+                "Scaler",
+                "Kellex"
+            ]
+        }
+    },
+    "roles": {
+        "1": {
+            "role": "Damage"
+        },
+        "2": {
+            "role": "Tank"
+        },
+        "3": {
+            "role": "Support"
+        },
+        "4": {
+            "role": "Flex"
+        }
+    },
+    "players": {
+        "1": {
+            "name": "Carpe",
+            "role": "Damage",
+            "team": "KOR"
+        },
+        "2": {
+            "name": "Architect",
+            "role": "Damage",
+            "team": "KOR"
+        },
+        "3": {
+            "name": "Haksal",
+            "role": "Damage",
+            "team": "KOR"
+        },
+        "4": {
+            "name": "ChoiHyoBin",
+            "role": "Tank",
+            "team": "KOR"
+        },
+        "5": {
+            "name": "Mano",
+            "role": "Tank",
+            "team": "KOR"
+        },
+        "6": {
+            "name": "iDK",
+            "role": "Support",
+            "team": "KOR"
+        },
+        "7": {
+            "name": "Bdosin",
+            "role": "Support",
+            "team": "KOR"
+        },
+        "8": {
+            "name": "Corey",
+            "role": "Damage",
+            "team": "USA"
+        },
+        "9": {
+            "name": "KSF",
+            "role": "Damage",
+            "team": "USA"
+        },
+        "10": {
+            "name": "sinatraa",
+            "role": "Damage",
+            "team": "USA"
+        },
+        "11": {
+            "name": "SPACE",
+            "role": "Tank",
+            "team": "USA"
+        },
+        "12": {
+            "name": "super",
+            "role": "Tank",
+            "team": "USA"
+        },
+        "13": {
+            "name": "moth",
+            "role": "Support",
+            "team": "USA"
+        },
+        "14": {
+            "name": "Rawkus",
+            "role": "Support",
+            "team": "USA"
+        },
+        "15": {
+            "name": "SoOn",
+            "role": "Damage",
+            "team": "FRA"
+        },
+        "16": {
+            "name": "Leaf",
+            "role": "Damage",
+            "team": "FRA"
+        },
+        "17": {
+            "name": "Hqrdest",
+            "role": "Damage",
+            "team": "FRA"
+        },
+        "18": {
+            "name": "Tek36",
+            "role": "Tank",
+            "team": "FRA"
+        },
+        "19": {
+            "name": "Chubz",
+            "role": "Tank",
+            "team": "FRA"
+        },
+        "20": {
+            "name": "FDGoD",
+            "role": "Support",
+            "team": "FRA"
+        },
+        "21": {
+            "name": "HyP",
+            "role": "Support",
+            "team": "FRA"
+        },
+        "22": {
+            "name": "Shax",
+            "role": "Damage",
+            "team": "DNK"
+        },
+        "23": {
+            "name": "Naga",
+            "role": "Damage",
+            "team": "DNK"
+        },
+        "24": {
+            "name": "Fischer",
+            "role": "Damage",
+            "team": "DNK"
+        },
+        "25": {
+            "name": "Molf1g",
+            "role": "Flex",
+            "team": "DNK"
+        },
+        "26": {
+            "name": "Henningsen",
+            "role": "Tank",
+            "team": "DNK"
+        },
+        "27": {
+            "name": "Scaler",
+            "role": "Support",
+            "team": "DNK"
+        },
+        "28": {
+            "name": "Kellex",
+            "role": "Support",
+            "team": "DNK"
+        },
+        "29": {
+            "name": "A10",
+            "role": "Damage",
+            "team": "NLD"
+        },
+        "30": {
+            "name": "Jona",
+            "role": "Damage",
+            "team": "NLD"
+        },
+        "31": {
+            "name": "Vizility",
+            "role": "Damage",
+            "team": "NLD"
+        },
+        "32": {
+            "name": "Brussen",
+            "role": "Tank",
+            "team": "NLD"
+        },
+        "33": {
+            "name": "daans",
+            "role": "Tank",
+            "team": "NLD"
+        },
+        "34": {
+            "name": "Trispear",
+            "role": "Support",
+            "team": "NLD"
+        },
+        "35": {
+            "name": "CrusaDe",
+            "role": "Support",
+            "team": "NLD"
+        },
+        "36": {
+            "name": "JinMu",
+            "role": "Damage",
+            "team": "CHN"
+        },
+        "37": {
+            "name": "Eileen",
+            "role": "Damage",
+            "team": "CHN"
+        },
+        "38": {
+            "name": "Elsa",
+            "role": "Tank",
+            "team": "CHN"
+        },
+        "39": {
+            "name": "guxue",
+            "role": "Tank",
+            "team": "CHN"
+        },
+        "40": {
+            "name": "Kyo",
+            "role": "Support",
+            "team": "CHN"
+        },
+        "41": {
+            "name": "Yveltal",
+            "role": "Support",
+            "team": "CHN"
+        }
+    }
+}
