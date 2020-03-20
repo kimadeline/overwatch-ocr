@@ -84,7 +84,7 @@ def compute_team_stats(team1, team2):
     team1_percentage = stats["teams"][team1] / total * 100
     team2_percentage = stats["teams"][team2] / total * 100
 
-    return {"team1": team1_percentage, "team2": team2_percentage}
+    return {team1: team1_percentage, team2: team2_percentage}
 
 
 def compute_role_stats():
@@ -129,7 +129,7 @@ def display_plot(datapoints):
     fig.show()
 
 
-def display_dashboard(pov_data):
+def display_dashboard(pov_data, team_stats, role_stats):
     external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 
     app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
@@ -145,6 +145,7 @@ def display_dashboard(pov_data):
         Game: OWWC 2019 - USA vs China
     """
             ),
+            html.Div(children=f"team stats: {team_stats} - role stats: {role_stats}"),
             dcc.Graph(
                 id="role-graph",
                 figure={
@@ -185,12 +186,14 @@ if __name__ == "__main__":
     with open("data/_pov_data.json") as p:
         pov_data = json.load(p)
 
-    display_dashboard(pov_data)
-
-    # datapoints = get_datapoints(pov_data, "ROLE")
-    # display_plot(datapoints)
-
     compute_game_stats(pov_data)
     team_stats = compute_team_stats("USA", "CHN")
     role_stats = compute_role_stats()
-    print(f"team stats: {team_stats} - role stats: {role_stats}")
+
+    # Display a single graph
+    # datapoints = get_datapoints(pov_data, "ROLE")
+    # display_plot(datapoints)
+    # print(f"team stats: {team_stats} - role stats: {role_stats}")
+
+    # Display a simplistic dashboard
+    display_dashboard(pov_data, team_stats, role_stats)
