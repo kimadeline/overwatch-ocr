@@ -20,7 +20,7 @@ What you'll need:
 ## Manual work to be done (sorry) ✍️
 
 - A list of video files for the games you want to parse, preferably without the breaks between maps. It's easier now that the OWL is on YT Gaming, otherwise [here's](https://www.youtube.com/watch?v=DrPyUcNo1HI) the full USA vs China OWWC match, now go have fun trimming it;
-- A JSON reference file mapping player names, team names and shorthand names, look at [`static/owwc_teams.json`](https://github.com/kimadeline/overwatch-ocr/blob/master/src/format_data.py) for an example.
+- A JSON reference file mapping player names, team names and shorthand names, look at [`static/owwc_teams.json`](https://github.com/kimadeline/overwatch-ocr/blob/master/static/owwc_teams.json) for an example.
 
 - Create the following folders at the workspace root (siblings of `src`):
   - `input`: Where you'll put your video files
