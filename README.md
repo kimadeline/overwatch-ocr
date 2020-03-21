@@ -1,6 +1,6 @@
 # Decoding the narrative in competitive Overwatch broadcasts
 
-Code for the PyCon US 2020 presentation "Decoding bias and narrative in competitive video games broadcasts with video analysis", see the [PyCon US website](https://us.pycon.org/2020/schedule/presentation/107/)).
+Code for the PyCon US 2020 presentation "Decoding bias and narrative in competitive video games broadcasts with video analysis" ([PyCon US website](https://us.pycon.org/2020/schedule/presentation/107/)).
 
 ## Installation 🏗
 
@@ -14,6 +14,7 @@ What you'll need:
 > git clone git@github.com:kimadeline/overwatch-ocr.git
 > cd overwatch-ocr
 > python -m venv .venv
+> source .venv/bin/activate
 > python -m pip install -r requirements.txt
 ```
 
@@ -29,9 +30,10 @@ What you'll need:
 
 ## Usage ⚒
 
-- Copy your video files to `input`
+- Copy your video files to the `input` folder
 - Update the `GAMES_LIST` variable in `src/__init__.py` to be the list of the videos you want to parse (don't include the extension)
-- `python main.py` (this might take a while because I make unoptimized, throttled Azure OCR calls) ⚠️ Make sure your computer doesn't go to sleep
+- `python main.py` (this might take a while because I make unoptimized, throttled Azure OCR calls)
+- _⚠️ Make sure your computer doesn't go to sleep_
 - Profit 🥳
 
 You should end up with something like this:
