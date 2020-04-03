@@ -2,7 +2,7 @@ appdirs==1.4.3
 astroid==2.3.2
 attrs==19.3.0
 azure-cognitiveservices-vision-computervision==0.5.0
-azure-common==1.1.23
+azure-common==1.1.25
 black==19.10b0
 certifi==2019.11.28
 chardet==3.0.4
