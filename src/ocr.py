@@ -8,7 +8,7 @@ from azure.cognitiveservices.vision.computervision.models import (
 )
 from msrest.authentication import CognitiveServicesCredentials
 
-from .database import purge_db, save_player_pov
+from .database import initialize_db, purge_db, save_player_pov
 from .format_data import trim_name
 
 from . import OUTPUT_ROOT_DIR
@@ -38,7 +38,7 @@ computervision_client = ComputerVisionClient(
 )
 
 
-def detect_printed_text(video_name, image_path):
+def detect_printed_text(video_name, image_path, video_db):
     print(f"detect_printed_text for {image_path}")
     # image_path = "/Users/kimiguel/Documents/Sandbox/owl-ocr/output/sk_usa_720p/cropped/frame0031_player.png"
     frame_nb = os.path.basename(image_path)[5:9]
@@ -72,19 +72,26 @@ def detect_printed_text(video_name, image_path):
                     f"Found {line.text} in frame {frame_nb} at position {line.bounding_box}"
                 )
                 player_name = trim_name(line.text)
-                save_player_pov(video_name, player_name, frame_nb)
+                save_player_pov(video_name, player_name, frame_nb, video_db)
             else:
                 print(f"No player pov in frame {frame_nb}")
 
 
-def read_video_frames(video_name):
+def read_video_frames(video_name, video_path, match_name):
     print(f"read video frames for {video_name}")
-    purge_db()
-    frames_folder = os.path.join(OUTPUT_ROOT_DIR, video_name, "cropped")
+
+    # If parsing one game per db: pyrbe db,
+    # Otherwise initialize an existing db with a table for the game
+    if match_name:
+        video_db = initialize_db(match_name)
+    else:
+        purge_db()
+
+    frames_folder = os.path.join(OUTPUT_ROOT_DIR, video_path, video_name, "cropped")
     count = 0
     frames = os.listdir(frames_folder)
     for frame in frames:
-        detect_printed_text(video_name, os.path.join(frames_folder, frame))
+        detect_printed_text(video_name, os.path.join(frames_folder, frame), video_db)
         count += 1
         print(f"{count}/{len(frames)} frames parsed")
         # Sad free tier throttling (20 requests/minute)
