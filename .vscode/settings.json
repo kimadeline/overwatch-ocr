@@ -1,8 +1,8 @@
 {
-  "python.pythonPath": ".venv/bin/python3",
   "editor.formatOnSave": true,
-  "python.linting.pylintEnabled": true,
+  "python.linting.pylintEnabled": false,
   "python.formatting.provider": "black",
   "python.jediEnabled": false,
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "python.pythonPath": ".venv/bin/python"
 }
