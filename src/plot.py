@@ -22,11 +22,11 @@ def team_colors(team):
 
 
 def role_colors(role):
-    if role == "Tank":
+    if role.lower() == "tank":
         return "Goldenrod"
-    elif role == "Damage":
+    elif role.lower() == "damage":
         return "HotPink"
-    elif role == "Support":
+    elif role.lower() == "support":
         return "LimeGreen"
     else:  # This shouldn't happen
         return "black"
@@ -115,7 +115,7 @@ def get_datapoints(pov_data, type):
     return {"x": x, "y": y, "text": text, "color": color}
 
 
-def start_dashboard_server(pov_data, team_stats, role_stats):
+def start_dashboard_server(pov_data, team_stats, role_stats, game_name, map_name):
     external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 
     app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
@@ -125,7 +125,7 @@ def start_dashboard_server(pov_data, team_stats, role_stats):
 
     app.layout = html.Div(
         children=[
-            html.H2(children="Game: OWWC 2019 - USA vs China"),
+            html.H2(children=f"Game: {game_name} - {map_name}"),
             html.Div(children=f"team stats: {team_stats} - role stats: {role_stats}"),
             dcc.Graph(
                 id="role-graph",

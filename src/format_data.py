@@ -1,4 +1,10 @@
-from .database import get_frames, get_players, save_player_intervals
+from .database import (
+    get_frames,
+    get_players,
+    initialize_db,
+    purge_db,
+    save_player_intervals,
+)
 
 
 def trim_name(player_name):
@@ -6,9 +12,12 @@ def trim_name(player_name):
     return player_name.split(" ")[-1]
 
 
-def get_intervals(player):
-    """Return a list of start and end intervals where the player POV was visible on-screen. Takes a player name as parameter"""
-    frames = get_frames(player)
+def get_intervals(player, map_db_table):
+    """
+    Return a list of start and end intervals where the player POV was visible on-screen for a given map. 
+    Parameters: player name, and map (either a database or a table)
+    """
+    frames = get_frames(player, map_db_table)
     result = []
 
     if len(frames) == 0:
