@@ -13,9 +13,9 @@ stats = {"teams": defaultdict(int), "roles": defaultdict(int)}
 
 
 def team_colors(team):
-    if team == "USA":
+    if team == "PHI":
         return "blue"
-    elif team == "CHN":
+    elif team == "ATL":
         return "red"
     else:  # This shouldn't happen
         return "black"
@@ -178,12 +178,12 @@ def generate_graph(datapoints):
     return fig
 
 
-def display_graph(filepath="data/_pov_data.json"):
+def display_graph(filepath="data/phi_atl_w10_maps_pov.json", map_name="m2_hollywood"):
     with open(filepath) as p:
         pov_data = json.load(p)
 
-    compute_game_stats(pov_data)
-    team_stats = compute_team_stats("USA", "CHN")
+    compute_game_stats(pov_data[map_name])
+    team_stats = compute_team_stats("PHI", "ATL")
     role_stats = compute_role_stats()
 
     datapoints = get_datapoints(pov_data, "ROLE")
@@ -192,12 +192,20 @@ def display_graph(filepath="data/_pov_data.json"):
     figure.show()
 
 
-def display_dashboard(filepath="data/_pov_data.json"):
+def display_dashboard(
+    filepath="data/phi_atl_w10_maps_pov.json", map_name="m2_hollywood"
+):
     with open(filepath) as p:
         pov_data = json.load(p)
 
-    compute_game_stats(pov_data)
-    team_stats = compute_team_stats("USA", "CHN")
+    compute_game_stats(pov_data[map_name])
+    team_stats = compute_team_stats("PHI", "ATL")
     role_stats = compute_role_stats()
 
-    start_dashboard_server(pov_data, team_stats, role_stats)
+    start_dashboard_server(
+        pov_data[map_name],
+        team_stats,
+        role_stats,
+        "Philadelphia Fusion vs Atlanta Reign",
+        "Map 2: Hollywood",
+    )

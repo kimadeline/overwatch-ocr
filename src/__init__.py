@@ -1,5 +1,22 @@
 import os
 
+FOLDERS = {
+    "owl_w10_d1": [
+        "hou_bos_w10_maps",
+        "hzs_cdh_w10_maps",
+        "phi_par_w10_maps",
+        "van_gzc_w10_maps",
+        "was_dal_w10_maps",
+    ],
+    "owl_w10_d2": [
+        "cdh_van_w10_maps",
+        "hou_tor_w10_maps",
+        "phi_atl_w10_maps",
+        "sfs_gla_w10_maps",
+        "shd_gzc_w10_maps",
+    ],
+}
+
 GAMES_LIST = [
     "illios",
     "dorado_round_1",
