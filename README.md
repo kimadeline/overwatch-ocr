@@ -2,6 +2,8 @@
 
 Code for the PyCon US 2020 presentation "Decoding bias and narrative in competitive video games broadcasts with video analysis" ([PyCon US website](https://us.pycon.org/2020/schedule/presentation/107/)).
 
+✨ Slides: https://aka.ms/pycon2020-overwatch
+
 ## Installation 🏗
 
 What you'll need:
