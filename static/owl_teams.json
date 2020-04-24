@@ -1,0 +1,411 @@
+{
+  "teams": {
+    "1": {
+      "name": "Hangzhou Spark",
+      "shorthand": "HZS",
+      "players": {
+        "damage": ["Adora", "Bazzi", "Godsb", "Krystal", "Sasin"],
+        "tank": ["Ria", "Guxue"],
+        "support": ["Idk", "Bebe", "M1ka", "Coldest"]
+      },
+      "misspellings": {
+        "adora": ["DORA"],
+        "bazzi": [],
+        "godsb": ["ConSB", "GODSS", "GOOSB", "conSA"],
+        "krystal": [],
+        "sasin": ["COSIN", "SOSIN"],
+        "ria": [],
+        "guxue": [],
+        "idk": ["10K", "1DK"],
+        "bebe": [],
+        "m1ka": [],
+        "coldest": []
+      }
+    },
+    "2": {
+      "name": "Chengdu Hunters",
+      "shorthand": "CDH",
+      "players": {
+        "damage": ["Jinmu", "Baconjack", "Leave"],
+        "tank": ["Lateyoung", "Elsa", "Ameng", "Ating"],
+        "support": ["Kyo", "Yveltal", "Lengsa", "Molly"]
+      },
+      "misspellings": {
+        "jinmu": ["INMU", "JINMI", "IINMU", "JINMIL", "UNMU"],
+        "baconjack": [],
+        "leave": ["IFAVE", "FAVE", "IFOVE"],
+        "lateyoung": [],
+        "elsa": ["ISA", "LISA", "ZSA", "LSA", "SA"],
+        "ameng": ["MENG", "IMENG", "RMENG"],
+        "ating": [],
+        "kyo": ["YO"],
+        "yveltal": [],
+        "lengsa": [],
+        "molly": []
+      }
+    },
+    "3": {
+      "name": "Vancouver Titans",
+      "shorthand": "VAN",
+      "players": {
+        "damage": ["Seominsoo", "Stitch", "Haksal"],
+        "tank": ["Fissure", "Jjanu"],
+        "support": ["Ryujehong", "Twilight", "Slime"]
+      },
+      "misspellings": {
+        "seominsoo": ["SEDMINSOO", "SFOMINSOO", "SEOMINSDO"],
+        "stitch": [],
+        "haksal": [],
+        "fissure": [],
+        "jjanu": ["JANU", "UIANI", "UJANU", "UIANU", "UJONI"],
+        "ryujehong": ["VILLEHONG", "YUJEHONG", "RVILLEHONG"],
+        "twilight": [],
+        "slime": []
+      }
+    },
+    "4": {
+      "name": "Guangzhou Charge",
+      "shorthand": "GZC",
+      "players": {
+        "damage": ["Nero", "Eileen", "Happy"],
+        "tank": ["Rio", "Crong"],
+        "support": ["Neptuno", "Chara", "Shu", "Wya"]
+      },
+      "misspellings": {
+        "nero": ["VERO", "HERO", "VERD", "FTA"],
+        "eileen": [],
+        "happy": ["ppy", "PPY", "APPy", "HOPPY"],
+        "rio": ["RID", "RIn"],
+        "crong": ["PRONG", "CHONG", "In"],
+        "neptuno": ["NEPTUND"],
+        "chara": [],
+        "shu": ["HU", "HI"],
+        "wya": []
+      }
+    },
+    "5": {
+      "name": "Philadelphia Fusion",
+      "shorthand": "PHI",
+      "players": {
+        "damage": ["Eqo", "Carpe", "Ivy", "Chipsa", "Heesu"],
+        "tank": ["Fury", "Poko", "Sado"],
+        "support": ["Boombox", "Funnyastro", "Alarm"]
+      },
+      "misspellings": {
+        "eqo": [],
+        "carpe": ["PARPE", "POPPE", "PORPE", "RPE", "PORDE"],
+        "ivy": ["VY", "WV", "Vy", "VV"],
+        "chipsa": [],
+        "heesu": [],
+        "fury": [],
+        "poko": [],
+        "sado": ["ADO", "FADO"],
+        "boombox": [],
+        "funnyastro": [],
+        "alarm": []
+      }
+    },
+    "6": {
+      "name": "Paris Eternal",
+      "shorthand": "PAR",
+      "players": {
+        "damage": ["Soon", "Nicogdh", "Sp9rk1e", "Xzi"],
+        "tank": ["Benbest", "Nosmite", "Hanbin", "Smex"],
+        "support": ["Greyy", "Kruise", "Fdgod"]
+      },
+      "misspellings": {
+        "soon": ["COON"],
+        "nicogdh": ["NICOGOH"],
+        "sp9rk1e": [],
+        "xzi": [],
+        "benbest": [],
+        "nosmite": [],
+        "hanbin": [],
+        "smex": [],
+        "greyy": ["GREVY"],
+        "kruise": [],
+        "fdgod": ["FOGOD", "EDGOD", "EnGOD"]
+      }
+    },
+    "7": {
+      "name": "Houston Outlaws",
+      "shorthand": "HOU",
+      "players": {
+        "damage": ["Danteh", "Linkzr", "Hydration", "Blase"],
+        "tank": ["Spree", "Muma", "Meko"],
+        "support": ["Rawkus", "Boink", "Jecse", "Rapel"]
+      },
+      "misspellings": {
+        "danteh": [
+          "JANTEH",
+          "TANTEH",
+          "ANTEH",
+          "WANTEH",
+          "ITEH",
+          "TEH",
+          "BANTEH",
+          "INTEH",
+          "ONTEH"
+        ],
+        "linkzr": ["LINKER", "LINK7R", "LINK7P"],
+        "hydration": [],
+        "blase": [],
+        "spree": [],
+        "muma": ["MUM", "MIIMA", "MOM"],
+        "meko": ["MEXD", "MEKD", "MEND"],
+        "rawkus": ["AWKUS"],
+        "boink": [],
+        "jecse": [],
+        "rapel": ["DOPE", "PAPEL"]
+      }
+    },
+    "8": {
+      "name": "Boston Uprising",
+      "shorthand": "BOS",
+      "players": {
+        "damage": ["Colourhex", "Jerry"],
+        "tank": ["Fusions", "Brussen", "Mouffin"],
+        "support": ["Myunbong", "Swimmer", "Halo"]
+      },
+      "misspellings": {
+        "colourhex": [
+          "COLOURMEX",
+          "COLDORWEN",
+          "COLDORHEX",
+          "CBLOWNREX",
+          "COLOUHREN",
+          "COLOURNEX",
+          "CULLURNEX",
+          "QUEDURHEX",
+          "CUTOURHEX",
+          "COLOUNITEX",
+          "COLODANEX",
+          "CULLUMEX",
+          "WILDURHEX",
+          "COLFOREST"
+        ],
+        "jerry": [
+          "ERRY",
+          "FRRY",
+          "RRY",
+          "FARY",
+          "CRAY",
+          "FWRY",
+          "TARY",
+          "FREY",
+          "TRRY",
+          "URRY",
+          "FRRT",
+          "RRY",
+          "FARY",
+          "FANY",
+          "EARY",
+          "RAY",
+          "CODY",
+          "EPPY",
+          "CODV"
+        ],
+        "fusions": ["FOSIONS"],
+        "brussen": [],
+        "mouffin": [
+          "DUFFIN",
+          "TOWEFIN",
+          "IDUFFIN",
+          "TOUFFIN",
+          "OUFFIN",
+          "BUFFIN",
+          "YOUFFIN",
+          "OUTEFIN",
+          "AQUEFIN",
+          "10OFFIN",
+          "OUTFIN",
+          "UUFFIN",
+          "TOUFFIR",
+          "MOUTFRY",
+          "MOREIFFIN",
+          "ADUFFIN"
+        ],
+        "myunbong": [
+          "MYUNDUNG",
+          "MYUNHUNG",
+          "MYUNBUNG",
+          "MVUINBONG",
+          "MYUNHONG",
+          "MYLINBONG"
+        ],
+        "swimmer": [],
+        "halo": []
+      }
+    },
+    "9": {
+      "name": "Washington Justice",
+      "shorthand": "WAS",
+      "players": {
+        "damage": ["Stratus", "Corey", "Ttuba"],
+        "tank": ["Roar", "Ellivote", "Lullsish"],
+        "support": ["Ark", "Aimgod"]
+      },
+      "misspellings": {
+        "stratus": ["CTPOTUS", "OTDOTUS", "STRATOS"],
+        "corey": ["/COREY", "PGREY", "CBREY", "CURLY"],
+        "ttuba": [],
+        "roar": ["ADAR", "ROnR"],
+        "ellivote": ["FILIVOTE", "LLUVOTE", "CHIVOTE"],
+        "lullsish": [],
+        "ark": ["ORK", "9RK", "RK"],
+        "aimgod": ["RIMGOD", "RIMGOO", "HIMGOD"]
+      }
+    },
+    "10": {
+      "name": "Dallas Fuel",
+      "shorthand": "DAL",
+      "players": {
+        "damage": ["Akm", "Decay", "Zachareee", "Doha"],
+        "tank": ["Gamsu", "Note", "Trill"],
+        "support": ["Harryhook", "Unkoe", "Closer", "Crimzo"]
+      },
+      "misspellings": {
+        "akm": [],
+        "decay": ["DECRY", "nFray"],
+        "zachareee": [],
+        "doha": ["DOHR", "DONA"],
+        "gamsu": ["AMSU"],
+        "note": ["VOTE"],
+        "trill": ["TRULL"],
+        "harryhook": [],
+        "unkoe": [],
+        "closer": [],
+        "crimzo": []
+      }
+    },
+    "11": {
+      "name": "Shanghai Dragons",
+      "shorthand": "SHD",
+      "players": {
+        "damage": ["Diya", "Fleta", "Diem", "Dding", "Lip"],
+        "tank": ["Fearless", "Geguri", "Void", "Stand1"],
+        "support": ["Izayaki", "Luffy", "Leejaegon"]
+      },
+      "misspellings": {
+        "diya": [],
+        "fleta": ["LETA", "TA", "LETR", "LCTO", "IFTA", "FLETR", "ETA"],
+        "diem": ["IEM"],
+        "dding": [],
+        "lip": [],
+        "fearless": [],
+        "geguri": [],
+        "void": ["VOIn"],
+        "stand1": ["STANDI"],
+        "izayaki": ["178YAKI"],
+        "luffy": [],
+        "leejaegon": ["EEJAEGON", "EEJREGON", "JAEGON", "FEJAEGON", "FFIREGON"]
+      }
+    },
+    "12": {
+      "name": "Toronto Defiant",
+      "shorthand": "TOR",
+      "players": {
+        "damage": ["Mangachu", "Logix", "Agilities", "Surefour"],
+        "tank": ["Nevix", "Beast"],
+        "support": ["Kellex", "Kariv", "Roky"]
+      },
+      "misspellings": {
+        "mangachu": [],
+        "logix": [],
+        "agilities": ["GILITIES", "OGILITIES", "THIITIES"],
+        "surefour": ["UREFOUR", "SHIREFOUR", "IIREFOUR"],
+        "nevix": ["VEVIX", "HEVIX", "MEVIX", "WEVIX", "JEVIX", "UFVIY"],
+        "beast": ["EAST", "BFAST", "REOST", "COST"],
+        "kellex": ["WELLEX"],
+        "kariv": ["KORIV"],
+        "roky": []
+      }
+    },
+    "13": {
+      "name": "Atlanta Reign",
+      "shorthand": "ATL",
+      "players": {
+        "damage": ["Babybay", "Erster", "Edison", "Sharp"],
+        "tank": ["Pokpo", "Gator", "Frd", "Hawk"],
+        "support": ["Masaa", "Kodak", "Dogman", "Fire"]
+      },
+      "misspellings": {
+        "babybay": ["DORVBAY"],
+        "erster": ["COSTER"],
+        "edison": ["DISON", "ISON"],
+        "sharp": [],
+        "pokpo": [],
+        "gator": ["ATOR"],
+        "frd": [],
+        "hawk": ["JOWK", "AWK"],
+        "masaa": ["MASAR"],
+        "kodak": [],
+        "dogman": ["OnCMON"],
+        "Fire": []
+      }
+    },
+    "14": {
+      "name": "San Francisco Shock",
+      "shorthand": "SFS",
+      "players": {
+        "damage": ["Sinatraa", "Striker", "Rascal", "Architect", "Ans"],
+        "tank": ["Super", "Choihyobin", "Smurf"],
+        "support": ["Moth", "Viol2t"]
+      },
+      "misspellings": {
+        "sinatraa": [],
+        "striker": [],
+        "rascal": [],
+        "architect": ["RCHITECT"],
+        "ans": ["DNS", "FINS", "ONS"],
+        "super": ["SOPER"],
+        "choihyobin": [],
+        "smurf": [],
+        "moth": [],
+        "viol2t": ["VIOLZT", "VIOLET", "VIOL21"]
+      }
+    },
+    "15": {
+      "name": "Los Angeles Gladiators",
+      "shorthand": "GLA",
+      "players": {
+        "damage": ["Birdring", "Mirror", "Jaru"],
+        "tank": ["Space", "Bischu", "Oge", "Lhcloudy"],
+        "support": ["Biggoose", "Shaz", "Paintbrush"]
+      },
+      "misspellings": {
+        "birdring": ["PORING", "DIDORING", "RIDDRING"],
+        "mirror": [],
+        "jaru": ["IARI", "JARD", "JARI"],
+        "space": [],
+        "bischu": [],
+        "oge": ["GE", "IGE", "AGE"],
+        "lhcloudy": [],
+        "biggoose": ["IGGOOSE", "CCOOSE"],
+        "shaz": [],
+        "paintbrush": []
+      }
+    },
+    "16": {
+      "name": "New York Excelsior",
+      "shorthand": "NYE",
+      "players": {
+        "damage": ["Saebyeolbe", "Libero", "Nenne", "Whoru"],
+        "tank": ["Mano", "Hotba", "Bianca"],
+        "support": ["Jjonak", "Anamo", "Mandu"]
+      },
+      "misspellings": {
+        "Saebyeolbe": ["REBYEOLBE", "YEOLBE", "DERVENIRE", "BEBYEOLBE"],
+        "libero": ["IBERO"],
+        "nenne": ["HENNE", "YENNE", "MENNE", "VENNE", "INE", "WENNE"],
+        "whoru": [],
+        "mano": ["MAND", "MONO"],
+        "hotba": ["HOTBR"],
+        "bianca": [],
+        "jjonak": ["LIONAK", "JJDNAK", "JONAK", "UIONAK", "UJONAK"],
+        "anamo": [],
+        "mandu": []
+      }
+    }
+  }
+}

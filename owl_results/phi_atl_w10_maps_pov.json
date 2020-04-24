@@ -1,0 +1,570 @@
+{
+  "_default": {},
+  "m2_hollywood": {
+    "1": {
+      "name": "Carpe",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0109", "end": "0112" },
+        { "start": "0138", "end": "0148" },
+        { "start": "0150", "end": "0150" },
+        { "start": "0156", "end": "0163" },
+        { "start": "0299", "end": "0306" },
+        { "start": "0337", "end": "0364" },
+        { "start": "0377", "end": "0392" },
+        { "start": "0765", "end": "0786" },
+        { "start": "0795", "end": "0806" },
+        { "start": "0941", "end": "0949" },
+        { "start": "0951", "end": "0957" },
+        { "start": "0996", "end": "0996" }
+      ]
+    },
+    "2": {
+      "name": "Ivy",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0095", "end": "0107" },
+        { "start": "0202", "end": "0213" },
+        { "start": "0223", "end": "0230" },
+        { "start": "0245", "end": "0265" },
+        { "start": "0336", "end": "0336" },
+        { "start": "0634", "end": "0641" },
+        { "start": "0877", "end": "0889" },
+        { "start": "0958", "end": "0971" }
+      ]
+    },
+    "3": {
+      "name": "Fury",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0394", "end": "0406" },
+        { "start": "0645", "end": "0662" },
+        { "start": "0788", "end": "0794" },
+        { "start": "0869", "end": "0875" },
+        { "start": "0938", "end": "0938" }
+      ]
+    },
+    "4": {
+      "name": "Boombox",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0175", "end": "0184" },
+        { "start": "0191", "end": "0201" },
+        { "start": "0808", "end": "0814" }
+      ]
+    },
+    "5": {
+      "name": "Alarm",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0071", "end": "0082" },
+        { "start": "0084", "end": "0093" },
+        { "start": "0165", "end": "0173" },
+        { "start": "0266", "end": "0270" },
+        { "start": "0278", "end": "0298" },
+        { "start": "0939", "end": "0940" },
+        { "start": "0972", "end": "0973" }
+      ]
+    },
+    "6": {
+      "name": "Babybay",
+      "role": "damage",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0113", "end": "0137" },
+        { "start": "0231", "end": "0238" },
+        { "start": "0514", "end": "0517" },
+        { "start": "0531", "end": "0556" },
+        { "start": "0563", "end": "0578" },
+        { "start": "0586", "end": "0593" },
+        { "start": "0595", "end": "0597" },
+        { "start": "0605", "end": "0612" },
+        { "start": "0821", "end": "0829" },
+        { "start": "0896", "end": "0906" },
+        { "start": "0974", "end": "0979" },
+        { "start": "0985", "end": "0990" }
+      ]
+    },
+    "7": {
+      "name": "Edison",
+      "role": "damage",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0519", "end": "0530" },
+        { "start": "0598", "end": "0603" },
+        { "start": "0667", "end": "0677" },
+        { "start": "0714", "end": "0726" },
+        { "start": "0732", "end": "0751" },
+        { "start": "0831", "end": "0838" },
+        { "start": "0843", "end": "0852" },
+        { "start": "0908", "end": "0919" }
+      ]
+    },
+    "8": {
+      "name": "Hawk",
+      "role": "tank",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0614", "end": "0617" },
+        { "start": "0642", "end": "0644" },
+        { "start": "0679", "end": "0683" },
+        { "start": "0694", "end": "0713" },
+        { "start": "0854", "end": "0868" }
+      ]
+    },
+    "9": {
+      "name": "Dogman",
+      "role": "support",
+      "team": "ATL",
+      "intervals": [{ "start": "0921", "end": "0937" }]
+    }
+  },
+  "m3_hanamura": {
+    "1": {
+      "name": "Carpe",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0073", "end": "0083" },
+        { "start": "0253", "end": "0259" },
+        { "start": "0293", "end": "0298" },
+        { "start": "0457", "end": "0461" }
+      ]
+    },
+    "2": {
+      "name": "Ivy",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0084", "end": "0086" },
+        { "start": "0088", "end": "0095" },
+        { "start": "0100", "end": "0122" },
+        { "start": "0204", "end": "0209" },
+        { "start": "0441", "end": "0449" },
+        { "start": "0451", "end": "0455" },
+        { "start": "0527", "end": "0534" },
+        { "start": "0542", "end": "0550" },
+        { "start": "0552", "end": "0568" }
+      ]
+    },
+    "3": {
+      "name": "Fury",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0497", "end": "0513" },
+        { "start": "0522", "end": "0526" },
+        { "start": "0536", "end": "0541" }
+      ]
+    },
+    "4": {
+      "name": "Sado",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0261", "end": "0262" },
+        { "start": "0401", "end": "0401" }
+      ]
+    },
+    "5": {
+      "name": "Funnyastro",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0123", "end": "0131" },
+        { "start": "0155", "end": "0202" }
+      ]
+    },
+    "6": {
+      "name": "Alarm",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [{ "start": "0222", "end": "0229" }]
+    },
+    "7": {
+      "name": "Babybay",
+      "role": "damage",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0246", "end": "0246" },
+        { "start": "0413", "end": "0421" },
+        { "start": "0423", "end": "0440" }
+      ]
+    },
+    "8": {
+      "name": "Erster",
+      "role": "damage",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0211", "end": "0217" },
+        { "start": "0230", "end": "0245" },
+        { "start": "0307", "end": "0312" },
+        { "start": "0469", "end": "0491" },
+        { "start": "0493", "end": "0495" },
+        { "start": "0586", "end": "0591" },
+        { "start": "0599", "end": "0612" }
+      ]
+    },
+    "9": {
+      "name": "Gator",
+      "role": "tank",
+      "team": "ATL",
+      "intervals": [{ "start": "0137", "end": "0149" }]
+    },
+    "10": {
+      "name": "Hawk",
+      "role": "tank",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0263", "end": "0288" },
+        { "start": "0299", "end": "0305" },
+        { "start": "0577", "end": "0585" },
+        { "start": "0618", "end": "0649" }
+      ]
+    }
+  },
+  "m4_dorado": {
+    "1": {
+      "name": "Carpe",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0535", "end": "0542" },
+        { "start": "0745", "end": "0745" }
+      ]
+    },
+    "2": {
+      "name": "Ivy",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0174", "end": "0183" },
+        { "start": "0335", "end": "0342" },
+        { "start": "0413", "end": "0418" },
+        { "start": "0544", "end": "0573" },
+        { "start": "0723", "end": "0744" }
+      ]
+    },
+    "3": {
+      "name": "Fury",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0253", "end": "0268" },
+        { "start": "0644", "end": "0647" }
+      ]
+    },
+    "4": {
+      "name": "Sado",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0102", "end": "0118" },
+        { "start": "0344", "end": "0346" },
+        { "start": "0349", "end": "0349" },
+        { "start": "0649", "end": "0649" },
+        { "start": "0652", "end": "0660" },
+        { "start": "0662", "end": "0662" },
+        { "start": "0675", "end": "0680" }
+      ]
+    },
+    "5": {
+      "name": "Boombox",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [{ "start": "0412", "end": "0412" }]
+    },
+    "6": {
+      "name": "Alarm",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0163", "end": "0173" },
+        { "start": "0581", "end": "0584" }
+      ]
+    },
+    "7": {
+      "name": "Babybay",
+      "role": "damage",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0130", "end": "0147" },
+        { "start": "0190", "end": "0196" },
+        { "start": "0219", "end": "0224" },
+        { "start": "0237", "end": "0247" },
+        { "start": "0269", "end": "0282" },
+        { "start": "0309", "end": "0333" },
+        { "start": "0585", "end": "0611" },
+        { "start": "0696", "end": "0700" }
+      ]
+    },
+    "8": {
+      "name": "Erster",
+      "role": "damage",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0149", "end": "0162" },
+        { "start": "0283", "end": "0291" },
+        { "start": "0750", "end": "0763" }
+      ]
+    },
+    "9": {
+      "name": "Gator",
+      "role": "tank",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0080", "end": "0094" },
+        { "start": "0420", "end": "0431" }
+      ]
+    },
+    "10": {
+      "name": "Hawk",
+      "role": "tank",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0198", "end": "0205" },
+        { "start": "0213", "end": "0218" },
+        { "start": "0359", "end": "0360" },
+        { "start": "0362", "end": "0364" },
+        { "start": "0370", "end": "0379" },
+        { "start": "0419", "end": "0419" },
+        { "start": "0612", "end": "0631" },
+        { "start": "0686", "end": "0694" },
+        { "start": "0702", "end": "0715" }
+      ]
+    },
+    "11": {
+      "name": "Dogman",
+      "role": "support",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0386", "end": "0396" },
+        { "start": "0633", "end": "0633" }
+      ]
+    }
+  },
+  "m1_busan": {
+    "1": {
+      "name": "Carpe",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0025", "end": "0047" },
+        { "start": "0054", "end": "0067" },
+        { "start": "0082", "end": "0116" },
+        { "start": "0155", "end": "0161" },
+        { "start": "0166", "end": "0183" },
+        { "start": "0232", "end": "0238" },
+        { "start": "0245", "end": "0254" },
+        { "start": "0302", "end": "0318" },
+        { "start": "0347", "end": "0369" },
+        { "start": "0392", "end": "0397" },
+        { "start": "0484", "end": "0492" },
+        { "start": "0517", "end": "0556" },
+        { "start": "0563", "end": "0566" },
+        { "start": "0568", "end": "0584" },
+        { "start": "0605", "end": "0609" },
+        { "start": "0611", "end": "0618" },
+        { "start": "0625", "end": "0661" },
+        { "start": "0701", "end": "0731" }
+      ]
+    },
+    "2": {
+      "name": "Sado",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [{ "start": "0733", "end": "0745" }]
+    },
+    "3": {
+      "name": "Alarm",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [{ "start": "0746", "end": "0748" }]
+    },
+    "4": {
+      "name": "Babybay",
+      "role": "damage",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0017", "end": "0024" },
+        { "start": "0068", "end": "0081" },
+        { "start": "0134", "end": "0142" },
+        { "start": "0285", "end": "0292" },
+        { "start": "0321", "end": "0341" },
+        { "start": "0448", "end": "0454" },
+        { "start": "0473", "end": "0483" },
+        { "start": "0493", "end": "0494" },
+        { "start": "0585", "end": "0599" }
+      ]
+    },
+    "5": {
+      "name": "Edison",
+      "role": "damage",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0125", "end": "0127" },
+        { "start": "0255", "end": "0284" },
+        { "start": "0294", "end": "0301" },
+        { "start": "0370", "end": "0377" },
+        { "start": "0456", "end": "0472" },
+        { "start": "0619", "end": "0624" }
+      ]
+    },
+    "6": {
+      "name": "Gator",
+      "role": "tank",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0378", "end": "0381" },
+        { "start": "0700", "end": "0700" }
+      ]
+    },
+    "7": {
+      "name": "Hawk",
+      "role": "tank",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0131", "end": "0133" },
+        { "start": "0143", "end": "0152" },
+        { "start": "0319", "end": "0320" }
+      ]
+    },
+    "8": {
+      "name": "Dogman",
+      "role": "support",
+      "team": "ATL",
+      "intervals": [{ "start": "0496", "end": "0509" }]
+    }
+  },
+  "m5_illios": {
+    "1": {
+      "name": "Carpe",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0120", "end": "0135" },
+        { "start": "0178", "end": "0196" },
+        { "start": "0539", "end": "0544" },
+        { "start": "0558", "end": "0589" },
+        { "start": "0618", "end": "0624" },
+        { "start": "0634", "end": "0640" },
+        { "start": "0676", "end": "0690" },
+        { "start": "0705", "end": "0706" }
+      ]
+    },
+    "2": {
+      "name": "Ivy",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0171", "end": "0176" },
+        { "start": "0198", "end": "0199" },
+        { "start": "0201", "end": "0205" },
+        { "start": "0409", "end": "0426" },
+        { "start": "0719", "end": "0723" }
+      ]
+    },
+    "3": {
+      "name": "Fury",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0645", "end": "0646" },
+        { "start": "0708", "end": "0718" }
+      ]
+    },
+    "4": {
+      "name": "Sado",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0546", "end": "0556" },
+        { "start": "0626", "end": "0628" },
+        { "start": "0630", "end": "0633" },
+        { "start": "0642", "end": "0644" },
+        { "start": "0746", "end": "0754" }
+      ]
+    },
+    "5": {
+      "name": "Funnyastro",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0353", "end": "0373" },
+        { "start": "0484", "end": "0492" },
+        { "start": "0535", "end": "0538" },
+        { "start": "0591", "end": "0596" }
+      ]
+    },
+    "6": {
+      "name": "Babybay",
+      "role": "damage",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0067", "end": "0071" },
+        { "start": "0206", "end": "0210" },
+        { "start": "0406", "end": "0408" },
+        { "start": "0435", "end": "0459" },
+        { "start": "0474", "end": "0483" },
+        { "start": "0604", "end": "0611" },
+        { "start": "0613", "end": "0617" },
+        { "start": "0691", "end": "0696" },
+        { "start": "0699", "end": "0701" },
+        { "start": "0731", "end": "0732" }
+      ]
+    },
+    "7": {
+      "name": "Erster",
+      "role": "damage",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0078", "end": "0114" },
+        { "start": "0142", "end": "0162" },
+        { "start": "0234", "end": "0240" },
+        { "start": "0296", "end": "0328" },
+        { "start": "0647", "end": "0656" }
+      ]
+    },
+    "8": {
+      "name": "Gator",
+      "role": "tank",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0212", "end": "0222" },
+        { "start": "0329", "end": "0350" }
+      ]
+    },
+    "9": {
+      "name": "Hawk",
+      "role": "tank",
+      "team": "ATL",
+      "intervals": [
+        { "start": "0055", "end": "0065" },
+        { "start": "0072", "end": "0077" },
+        { "start": "0223", "end": "0233" },
+        { "start": "0389", "end": "0400" },
+        { "start": "0460", "end": "0473" },
+        { "start": "0658", "end": "0660" },
+        { "start": "0702", "end": "0704" },
+        { "start": "0734", "end": "0745" }
+      ]
+    },
+    "10": {
+      "name": "Masaa",
+      "role": "support",
+      "team": "ATL",
+      "intervals": [{ "start": "0381", "end": "0387" }]
+    },
+    "11": {
+      "name": "Dogman",
+      "role": "support",
+      "team": "ATL",
+      "intervals": [{ "start": "0402", "end": "0404" }]
+    }
+  }
+}

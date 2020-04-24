@@ -1,0 +1,669 @@
+{
+  "_default": {},
+  "m2_hollywood": {
+    "1": {
+      "name": "Carpe",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0053", "end": "0057" },
+        { "start": "0092", "end": "0097" },
+        { "start": "0323", "end": "0327" },
+        { "start": "0363", "end": "0367" },
+        { "start": "0534", "end": "0544" },
+        { "start": "0677", "end": "0693" },
+        { "start": "0706", "end": "0708" },
+        { "start": "0768", "end": "0775" },
+        { "start": "0824", "end": "0828" },
+        { "start": "0833", "end": "0835" },
+        { "start": "0856", "end": "0860" },
+        { "start": "0864", "end": "0870" },
+        { "start": "0938", "end": "0948" },
+        { "start": "0984", "end": "0994" }
+      ]
+    },
+    "2": {
+      "name": "Ivy",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0328", "end": "0341" },
+        { "start": "0760", "end": "0766" },
+        { "start": "0782", "end": "0791" },
+        { "start": "0803", "end": "0812" },
+        { "start": "0836", "end": "0846" },
+        { "start": "0958", "end": "0974" },
+        { "start": "1068", "end": "1076" }
+      ]
+    },
+    "3": {
+      "name": "Fury",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0241", "end": "0244" },
+        { "start": "0311", "end": "0318" },
+        { "start": "0699", "end": "0704" },
+        { "start": "0733", "end": "0737" }
+      ]
+    },
+    "4": {
+      "name": "Boombox",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0933", "end": "0933" },
+        { "start": "1002", "end": "1002" }
+      ]
+    },
+    "5": {
+      "name": "Alarm",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0361", "end": "0361" },
+        { "start": "0900", "end": "0908" }
+      ]
+    },
+    "6": {
+      "name": "Soon",
+      "role": "damage",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0254", "end": "0255" },
+        { "start": "0377", "end": "0401" },
+        { "start": "0598", "end": "0599" },
+        { "start": "0635", "end": "0635" },
+        { "start": "0665", "end": "0667" },
+        { "start": "0751", "end": "0755" },
+        { "start": "0873", "end": "0878" },
+        { "start": "0922", "end": "0930" }
+      ]
+    },
+    "7": {
+      "name": "Nicogdh",
+      "role": "damage",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0111", "end": "0124" },
+        { "start": "0142", "end": "0146" },
+        { "start": "0186", "end": "0186" },
+        { "start": "0188", "end": "0190" },
+        { "start": "0221", "end": "0221" },
+        { "start": "0290", "end": "0306" },
+        { "start": "0637", "end": "0645" },
+        { "start": "0975", "end": "0979" }
+      ]
+    },
+    "8": {
+      "name": "Benbest",
+      "role": "tank",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0195", "end": "0204" },
+        { "start": "0402", "end": "0406" },
+        { "start": "0609", "end": "0617" },
+        { "start": "0739", "end": "0750" }
+      ]
+    },
+    "9": {
+      "name": "Hanbin",
+      "role": "tank",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0138", "end": "0140" },
+        { "start": "0547", "end": "0558" },
+        { "start": "1108", "end": "1115" }
+      ]
+    },
+    "10": {
+      "name": "Greyy",
+      "role": "support",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0075", "end": "0086" },
+        { "start": "0108", "end": "0109" },
+        { "start": "0256", "end": "0262" },
+        { "start": "0601", "end": "0602" },
+        { "start": "0880", "end": "0886" }
+      ]
+    },
+    "11": {
+      "name": "Fdgod",
+      "role": "support",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0148", "end": "0153" },
+        { "start": "0167", "end": "0177" },
+        { "start": "0222", "end": "0226" },
+        { "start": "0228", "end": "0236" },
+        { "start": "0647", "end": "0649" }
+      ]
+    }
+  },
+  "m1_illios": {
+    "1": {
+      "name": "Carpe",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0076", "end": "0084" },
+        { "start": "0134", "end": "0135" },
+        { "start": "0141", "end": "0147" },
+        { "start": "0229", "end": "0239" },
+        { "start": "0411", "end": "0433" },
+        { "start": "0447", "end": "0456" },
+        { "start": "0466", "end": "0472" },
+        { "start": "0497", "end": "0514" },
+        { "start": "0536", "end": "0545" },
+        { "start": "0569", "end": "0574" },
+        { "start": "0612", "end": "0614" },
+        { "start": "0618", "end": "0626" },
+        { "start": "0657", "end": "0664" },
+        { "start": "0692", "end": "0702" },
+        { "start": "0760", "end": "0763" },
+        { "start": "0825", "end": "0829" },
+        { "start": "0909", "end": "0915" },
+        { "start": "0926", "end": "0931" },
+        { "start": "0980", "end": "0989" }
+      ]
+    },
+    "2": {
+      "name": "Ivy",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0203", "end": "0211" },
+        { "start": "0335", "end": "0338" },
+        { "start": "0463", "end": "0465" },
+        { "start": "0559", "end": "0562" },
+        { "start": "0564", "end": "0567" },
+        { "start": "0575", "end": "0579" },
+        { "start": "0665", "end": "0667" },
+        { "start": "0991", "end": "0991" },
+        { "start": "0999", "end": "1008" }
+      ]
+    },
+    "3": {
+      "name": "Fury",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [{ "start": "0656", "end": "0656" }]
+    },
+    "4": {
+      "name": "Sado",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0137", "end": "0140" },
+        { "start": "0458", "end": "0461" },
+        { "start": "0776", "end": "0781" },
+        { "start": "0783", "end": "0792" },
+        { "start": "0847", "end": "0853" },
+        { "start": "0855", "end": "0856" },
+        { "start": "0860", "end": "0866" },
+        { "start": "0899", "end": "0907" },
+        { "start": "0946", "end": "0947" },
+        { "start": "0949", "end": "0955" }
+      ]
+    },
+    "5": {
+      "name": "Funnyastro",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [{ "start": "0272", "end": "0276" }]
+    },
+    "6": {
+      "name": "Alarm",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [{ "start": "0830", "end": "0833" }]
+    },
+    "7": {
+      "name": "Soon",
+      "role": "damage",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0163", "end": "0176" },
+        { "start": "0188", "end": "0196" },
+        { "start": "0255", "end": "0266" },
+        { "start": "0277", "end": "0287" },
+        { "start": "0316", "end": "0324" },
+        { "start": "0584", "end": "0595" },
+        { "start": "0606", "end": "0608" },
+        { "start": "0636", "end": "0638" },
+        { "start": "0674", "end": "0679" },
+        { "start": "0681", "end": "0685" },
+        { "start": "0920", "end": "0922" },
+        { "start": "0956", "end": "0975" },
+        { "start": "1009", "end": "1020" }
+      ]
+    },
+    "8": {
+      "name": "Nicogdh",
+      "role": "damage",
+      "team": "PAR",
+      "intervals": [{ "start": "0687", "end": "0689" }]
+    },
+    "9": {
+      "name": "Benbest",
+      "role": "tank",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0293", "end": "0300" },
+        { "start": "0610", "end": "0611" },
+        { "start": "0867", "end": "0872" },
+        { "start": "1027", "end": "1040" }
+      ]
+    },
+    "10": {
+      "name": "Hanbin",
+      "role": "tank",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0052", "end": "0064" },
+        { "start": "0224", "end": "0227" },
+        { "start": "0520", "end": "0526" },
+        { "start": "0802", "end": "0820" }
+      ]
+    },
+    "11": {
+      "name": "Greyy",
+      "role": "support",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0116", "end": "0123" },
+        { "start": "0153", "end": "0162" }
+      ]
+    },
+    "12": {
+      "name": "Fdgod",
+      "role": "support",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0477", "end": "0482" },
+        { "start": "0519", "end": "0519" },
+        { "start": "0627", "end": "0634" }
+      ]
+    }
+  },
+  "m3_paris": {
+    "1": {
+      "name": "Carpe",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0079", "end": "0093" },
+        { "start": "0099", "end": "0102" },
+        { "start": "0195", "end": "0198" },
+        { "start": "0465", "end": "0467" },
+        { "start": "0545", "end": "0553" },
+        { "start": "0598", "end": "0599" },
+        { "start": "0734", "end": "0739" }
+      ]
+    },
+    "2": {
+      "name": "Ivy",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0156", "end": "0166" },
+        { "start": "0178", "end": "0181" },
+        { "start": "0192", "end": "0193" },
+        { "start": "0425", "end": "0425" },
+        { "start": "0468", "end": "0471" },
+        { "start": "0666", "end": "0672" }
+      ]
+    },
+    "3": {
+      "name": "Fury",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [{ "start": "0305", "end": "0312" }]
+    },
+    "4": {
+      "name": "Sado",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0416", "end": "0421" },
+        { "start": "0434", "end": "0434" },
+        { "start": "0436", "end": "0443" },
+        { "start": "0473", "end": "0480" },
+        { "start": "0482", "end": "0487" },
+        { "start": "0590", "end": "0591" },
+        { "start": "0601", "end": "0604" },
+        { "start": "0608", "end": "0609" },
+        { "start": "0611", "end": "0613" },
+        { "start": "0615", "end": "0616" }
+      ]
+    },
+    "5": {
+      "name": "Funnyastro",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0168", "end": "0177" },
+        { "start": "0680", "end": "0694" }
+      ]
+    },
+    "6": {
+      "name": "Alarm",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0103", "end": "0109" },
+        { "start": "0140", "end": "0148" },
+        { "start": "0538", "end": "0543" },
+        { "start": "0554", "end": "0564" },
+        { "start": "0582", "end": "0588" },
+        { "start": "0628", "end": "0631" }
+      ]
+    },
+    "7": {
+      "name": "Soon",
+      "role": "damage",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0327", "end": "0335" },
+        { "start": "0341", "end": "0353" },
+        { "start": "0504", "end": "0528" },
+        { "start": "0642", "end": "0653" },
+        { "start": "0695", "end": "0696" }
+      ]
+    },
+    "8": {
+      "name": "Nicogdh",
+      "role": "damage",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0655", "end": "0660" },
+        { "start": "0719", "end": "0727" }
+      ]
+    },
+    "9": {
+      "name": "Benbest",
+      "role": "tank",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0297", "end": "0304" },
+        { "start": "0391", "end": "0410" },
+        { "start": "0450", "end": "0461" }
+      ]
+    },
+    "10": {
+      "name": "Hanbin",
+      "role": "tank",
+      "team": "PAR",
+      "intervals": [{ "start": "0698", "end": "0705" }]
+    },
+    "11": {
+      "name": "Fdgod",
+      "role": "support",
+      "team": "PAR",
+      "intervals": [{ "start": "0354", "end": "0359" }]
+    }
+  },
+  "m4_dorado": {
+    "1": {
+      "name": "Carpe",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0084", "end": "0094" },
+        { "start": "0148", "end": "0161" },
+        { "start": "0392", "end": "0399" },
+        { "start": "0643", "end": "0647" },
+        { "start": "0742", "end": "0746" },
+        { "start": "0773", "end": "0781" },
+        { "start": "0800", "end": "0802" },
+        { "start": "0814", "end": "0820" },
+        { "start": "0828", "end": "0839" },
+        { "start": "0860", "end": "0863" },
+        { "start": "0869", "end": "0881" },
+        { "start": "0887", "end": "0890" },
+        { "start": "0892", "end": "0894" },
+        { "start": "0901", "end": "0903" },
+        { "start": "0908", "end": "0908" },
+        { "start": "0934", "end": "0944" },
+        { "start": "0949", "end": "0972" },
+        { "start": "0990", "end": "0994" }
+      ]
+    },
+    "2": {
+      "name": "Ivy",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0146", "end": "0146" },
+        { "start": "0302", "end": "0307" },
+        { "start": "0309", "end": "0311" },
+        { "start": "0660", "end": "0668" },
+        { "start": "0867", "end": "0868" },
+        { "start": "0912", "end": "0912" },
+        { "start": "0920", "end": "0924" }
+      ]
+    },
+    "3": {
+      "name": "Fury",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0403", "end": "0403" },
+        { "start": "0656", "end": "0656" }
+      ]
+    },
+    "4": {
+      "name": "Sado",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [{ "start": "0214", "end": "0221" }]
+    },
+    "5": {
+      "name": "Boombox",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0657", "end": "0659" },
+        { "start": "0804", "end": "0805" }
+      ]
+    },
+    "6": {
+      "name": "Alarm",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0267", "end": "0279" },
+        { "start": "0290", "end": "0297" },
+        { "start": "0301", "end": "0301" },
+        { "start": "0319", "end": "0323" },
+        { "start": "0400", "end": "0402" },
+        { "start": "0913", "end": "0913" }
+      ]
+    },
+    "7": {
+      "name": "Soon",
+      "role": "damage",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0059", "end": "0077" },
+        { "start": "0106", "end": "0112" },
+        { "start": "0120", "end": "0128" },
+        { "start": "0132", "end": "0132" },
+        { "start": "0141", "end": "0141" },
+        { "start": "0260", "end": "0263" },
+        { "start": "0370", "end": "0386" },
+        { "start": "0404", "end": "0409" },
+        { "start": "0426", "end": "0434" },
+        { "start": "0555", "end": "0568" },
+        { "start": "0583", "end": "0596" },
+        { "start": "0605", "end": "0615" },
+        { "start": "0676", "end": "0685" },
+        { "start": "0697", "end": "0702" },
+        { "start": "0711", "end": "0721" },
+        { "start": "0751", "end": "0770" },
+        { "start": "0904", "end": "0907" }
+      ]
+    },
+    "8": {
+      "name": "Nicogdh",
+      "role": "damage",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0167", "end": "0179" },
+        { "start": "0187", "end": "0188" },
+        { "start": "0324", "end": "0328" }
+      ]
+    },
+    "9": {
+      "name": "Benbest",
+      "role": "tank",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0133", "end": "0140" },
+        { "start": "0189", "end": "0194" },
+        { "start": "0387", "end": "0388" }
+      ]
+    },
+    "10": {
+      "name": "Greyy",
+      "role": "support",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0252", "end": "0259" },
+        { "start": "0330", "end": "0331" }
+      ]
+    },
+    "11": {
+      "name": "Fdgod",
+      "role": "support",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0627", "end": "0637" },
+        { "start": "0723", "end": "0734" }
+      ]
+    }
+  },
+  "m5_oasis": {
+    "1": {
+      "name": "Carpe",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0227", "end": "0229" },
+        { "start": "0397", "end": "0412" },
+        { "start": "0558", "end": "0561" },
+        { "start": "0565", "end": "0571" },
+        { "start": "0577", "end": "0588" },
+        { "start": "0604", "end": "0609" },
+        { "start": "0622", "end": "0632" },
+        { "start": "0656", "end": "0663" }
+      ]
+    },
+    "2": {
+      "name": "Ivy",
+      "role": "damage",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0133", "end": "0144" },
+        { "start": "0188", "end": "0188" },
+        { "start": "0197", "end": "0203" },
+        { "start": "0268", "end": "0268" },
+        { "start": "0672", "end": "0672" },
+        { "start": "0674", "end": "0676" },
+        { "start": "0688", "end": "0698" },
+        { "start": "0700", "end": "0700" }
+      ]
+    },
+    "3": {
+      "name": "Fury",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0246", "end": "0246" },
+        { "start": "0248", "end": "0249" }
+      ]
+    },
+    "4": {
+      "name": "Sado",
+      "role": "tank",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0179", "end": "0186" },
+        { "start": "0270", "end": "0277" },
+        { "start": "0286", "end": "0287" },
+        { "start": "0289", "end": "0290" },
+        { "start": "0341", "end": "0346" },
+        { "start": "0707", "end": "0711" }
+      ]
+    },
+    "5": {
+      "name": "Funnyastro",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0214", "end": "0225" },
+        { "start": "0251", "end": "0251" }
+      ]
+    },
+    "6": {
+      "name": "Alarm",
+      "role": "support",
+      "team": "PHI",
+      "intervals": [
+        { "start": "0094", "end": "0099" },
+        { "start": "0108", "end": "0118" }
+      ]
+    },
+    "7": {
+      "name": "Soon",
+      "role": "damage",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0045", "end": "0047" },
+        { "start": "0058", "end": "0060" },
+        { "start": "0123", "end": "0123" },
+        { "start": "0171", "end": "0176" },
+        { "start": "0351", "end": "0358" },
+        { "start": "0361", "end": "0374" },
+        { "start": "0413", "end": "0417" },
+        { "start": "0422", "end": "0439" },
+        { "start": "0487", "end": "0494" },
+        { "start": "0548", "end": "0557" },
+        { "start": "0641", "end": "0655" }
+      ]
+    },
+    "8": {
+      "name": "Nicogdh",
+      "role": "damage",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0125", "end": "0132" },
+        { "start": "0232", "end": "0239" },
+        { "start": "0462", "end": "0469" }
+      ]
+    },
+    "9": {
+      "name": "Benbest",
+      "role": "tank",
+      "team": "PAR",
+      "intervals": [{ "start": "0619", "end": "0621" }]
+    },
+    "10": {
+      "name": "Hanbin",
+      "role": "tank",
+      "team": "PAR",
+      "intervals": [
+        { "start": "0062", "end": "0066" },
+        { "start": "0070", "end": "0075" },
+        { "start": "0470", "end": "0478" }
+      ]
+    },
+    "11": {
+      "name": "Fdgod",
+      "role": "support",
+      "team": "PAR",
+      "intervals": [{ "start": "0616", "end": "0617" }]
+    }
+  }
+}
