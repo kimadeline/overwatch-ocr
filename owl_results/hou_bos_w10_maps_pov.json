@@ -1,0 +1,426 @@
+{
+  "_default": {},
+  "m1_lijiang": {
+    "1": {
+      "name": "Danteh",
+      "role": "damage",
+      "team": "HOU",
+      "intervals": [
+        { "start": "0184", "end": "0185" },
+        { "start": "0320", "end": "0330" },
+        { "start": "0462", "end": "0467" },
+        { "start": "0568", "end": "0568" },
+        { "start": "0570", "end": "0578" },
+        { "start": "0614", "end": "0618" }
+      ]
+    },
+    "2": {
+      "name": "Linkzr",
+      "role": "damage",
+      "team": "HOU",
+      "intervals": [
+        { "start": "0065", "end": "0074" },
+        { "start": "0094", "end": "0109" },
+        { "start": "0228", "end": "0231" },
+        { "start": "0237", "end": "0241" },
+        { "start": "0296", "end": "0301" },
+        { "start": "0378", "end": "0384" },
+        { "start": "0390", "end": "0399" },
+        { "start": "0436", "end": "0438" },
+        { "start": "0605", "end": "0610" }
+      ]
+    },
+    "3": {
+      "name": "Muma",
+      "role": "tank",
+      "team": "HOU",
+      "intervals": [
+        { "start": "0076", "end": "0079" },
+        { "start": "0176", "end": "0176" },
+        { "start": "0192", "end": "0193" },
+        { "start": "0242", "end": "0247" },
+        { "start": "0303", "end": "0303" },
+        { "start": "0305", "end": "0309" },
+        { "start": "0452", "end": "0456" },
+        { "start": "0468", "end": "0469" },
+        { "start": "0537", "end": "0542" },
+        { "start": "0595", "end": "0603" }
+      ]
+    },
+    "4": {
+      "name": "Meko",
+      "role": "tank",
+      "team": "HOU",
+      "intervals": [{ "start": "0172", "end": "0175" }]
+    },
+    "5": {
+      "name": "Rapel",
+      "role": "support",
+      "team": "HOU",
+      "intervals": [
+        { "start": "0186", "end": "0191" },
+        { "start": "0623", "end": "0623" }
+      ]
+    },
+    "6": {
+      "name": "Colourhex",
+      "role": "damage",
+      "team": "BOS",
+      "intervals": [{ "start": "0511", "end": "0518" }]
+    },
+    "7": {
+      "name": "Jerry",
+      "role": "damage",
+      "team": "BOS",
+      "intervals": [
+        { "start": "0053", "end": "0061" },
+        { "start": "0084", "end": "0089" },
+        { "start": "0125", "end": "0132" },
+        { "start": "0141", "end": "0154" },
+        { "start": "0278", "end": "0292" },
+        { "start": "0418", "end": "0423" },
+        { "start": "0439", "end": "0444" },
+        { "start": "0552", "end": "0559" },
+        { "start": "0585", "end": "0588" }
+      ]
+    },
+    "8": {
+      "name": "Fusions",
+      "role": "tank",
+      "team": "BOS",
+      "intervals": [
+        { "start": "0205", "end": "0210" },
+        { "start": "0415", "end": "0416" },
+        { "start": "0491", "end": "0509" }
+      ]
+    },
+    "9": {
+      "name": "Myunbong",
+      "role": "support",
+      "team": "BOS",
+      "intervals": [{ "start": "0211", "end": "0222" }]
+    }
+  },
+  "m2_hollywood": {
+    "1": {
+      "name": "Danteh",
+      "role": "damage",
+      "team": "HOU",
+      "intervals": [
+        { "start": "0120", "end": "0123" },
+        { "start": "0318", "end": "0324" },
+        { "start": "0475", "end": "0478" },
+        { "start": "0767", "end": "0780" },
+        { "start": "0898", "end": "0906" },
+        { "start": "0925", "end": "0926" },
+        { "start": "0983", "end": "0992" },
+        { "start": "1096", "end": "1102" },
+        { "start": "1134", "end": "1145" }
+      ]
+    },
+    "2": {
+      "name": "Linkzr",
+      "role": "damage",
+      "team": "HOU",
+      "intervals": [
+        { "start": "0132", "end": "0136" },
+        { "start": "0282", "end": "0301" },
+        { "start": "0311", "end": "0317" },
+        { "start": "0387", "end": "0395" },
+        { "start": "0400", "end": "0403" },
+        { "start": "0423", "end": "0423" },
+        { "start": "0473", "end": "0474" },
+        { "start": "0591", "end": "0602" },
+        { "start": "0608", "end": "0616" },
+        { "start": "0736", "end": "0743" },
+        { "start": "1030", "end": "1037" }
+      ]
+    },
+    "3": {
+      "name": "Muma",
+      "role": "tank",
+      "team": "HOU",
+      "intervals": [
+        { "start": "0404", "end": "0407" },
+        { "start": "0419", "end": "0422" },
+        { "start": "0623", "end": "0623" },
+        { "start": "0927", "end": "0930" }
+      ]
+    },
+    "4": {
+      "name": "Meko",
+      "role": "tank",
+      "team": "HOU",
+      "intervals": [{ "start": "0138", "end": "0139" }]
+    },
+    "5": {
+      "name": "Rawkus",
+      "role": "support",
+      "team": "HOU",
+      "intervals": [{ "start": "0479", "end": "0483" }]
+    },
+    "6": {
+      "name": "Rapel",
+      "role": "support",
+      "team": "HOU",
+      "intervals": [{ "start": "0125", "end": "0131" }]
+    },
+    "7": {
+      "name": "Colourhex",
+      "role": "damage",
+      "team": "BOS",
+      "intervals": [
+        { "start": "0072", "end": "0078" },
+        { "start": "0110", "end": "0113" },
+        { "start": "0452", "end": "0459" },
+        { "start": "0486", "end": "0499" },
+        { "start": "0506", "end": "0506" },
+        { "start": "0583", "end": "0586" },
+        { "start": "0844", "end": "0849" },
+        { "start": "0910", "end": "0918" },
+        { "start": "0922", "end": "0922" }
+      ]
+    },
+    "8": {
+      "name": "Jerry",
+      "role": "damage",
+      "team": "BOS",
+      "intervals": [
+        { "start": "0090", "end": "0097" },
+        { "start": "0198", "end": "0220" },
+        { "start": "0247", "end": "0250" },
+        { "start": "0252", "end": "0255" },
+        { "start": "0264", "end": "0267" },
+        { "start": "0325", "end": "0334" },
+        { "start": "0344", "end": "0347" },
+        { "start": "0354", "end": "0382" },
+        { "start": "0430", "end": "0437" },
+        { "start": "0442", "end": "0447" },
+        { "start": "0461", "end": "0465" },
+        { "start": "0513", "end": "0525" },
+        { "start": "0533", "end": "0559" },
+        { "start": "0576", "end": "0581" },
+        { "start": "0625", "end": "0629" },
+        { "start": "0717", "end": "0723" },
+        { "start": "0785", "end": "0797" },
+        { "start": "0816", "end": "0826" },
+        { "start": "0833", "end": "0843" },
+        { "start": "0864", "end": "0878" },
+        { "start": "0956", "end": "0976" },
+        { "start": "0998", "end": "1002" },
+        { "start": "1047", "end": "1062" },
+        { "start": "1068", "end": "1087" },
+        { "start": "1118", "end": "1129" }
+      ]
+    },
+    "9": {
+      "name": "Fusions",
+      "role": "tank",
+      "team": "BOS",
+      "intervals": [{ "start": "0571", "end": "0574" }]
+    },
+    "10": {
+      "name": "Brussen",
+      "role": "tank",
+      "team": "BOS",
+      "intervals": [
+        { "start": "0336", "end": "0337" },
+        { "start": "0341", "end": "0343" },
+        { "start": "0466", "end": "0470" },
+        { "start": "0748", "end": "0756" }
+      ]
+    },
+    "11": {
+      "name": "Myunbong",
+      "role": "support",
+      "team": "BOS",
+      "intervals": [
+        { "start": "0758", "end": "0761" },
+        { "start": "1003", "end": "1012" }
+      ]
+    },
+    "12": {
+      "name": "Halo",
+      "role": "support",
+      "team": "BOS",
+      "intervals": [{ "start": "0182", "end": "0188" }]
+    }
+  },
+  "m3_volskaya": {
+    "1": {
+      "name": "Danteh",
+      "role": "damage",
+      "team": "HOU",
+      "intervals": [
+        { "start": "0213", "end": "0218" },
+        { "start": "0223", "end": "0227" },
+        { "start": "0347", "end": "0362" },
+        { "start": "0365", "end": "0366" },
+        { "start": "0382", "end": "0384" },
+        { "start": "0431", "end": "0440" },
+        { "start": "0477", "end": "0484" },
+        { "start": "0605", "end": "0619" },
+        { "start": "0640", "end": "0650" },
+        { "start": "0657", "end": "0664" },
+        { "start": "0708", "end": "0713" },
+        { "start": "0741", "end": "0746" }
+      ]
+    },
+    "2": {
+      "name": "Linkzr",
+      "role": "damage",
+      "team": "HOU",
+      "intervals": [
+        { "start": "0280", "end": "0282" },
+        { "start": "0314", "end": "0327" },
+        { "start": "0338", "end": "0346" },
+        { "start": "0380", "end": "0381" },
+        { "start": "0404", "end": "0418" },
+        { "start": "0588", "end": "0595" },
+        { "start": "0666", "end": "0668" },
+        { "start": "0731", "end": "0739" }
+      ]
+    },
+    "3": {
+      "name": "Muma",
+      "role": "tank",
+      "team": "HOU",
+      "intervals": [{ "start": "0472", "end": "0475" }]
+    },
+    "4": {
+      "name": "Meko",
+      "role": "tank",
+      "team": "HOU",
+      "intervals": [
+        { "start": "0283", "end": "0289" },
+        { "start": "0373", "end": "0379" },
+        { "start": "0424", "end": "0426" },
+        { "start": "0674", "end": "0683" }
+      ]
+    },
+    "5": {
+      "name": "Rawkus",
+      "role": "support",
+      "team": "HOU",
+      "intervals": [{ "start": "0367", "end": "0369" }]
+    },
+    "6": {
+      "name": "Rapel",
+      "role": "support",
+      "team": "HOU",
+      "intervals": [{ "start": "0423", "end": "0423" }]
+    },
+    "7": {
+      "name": "Colourhex",
+      "role": "damage",
+      "team": "BOS",
+      "intervals": [
+        { "start": "0091", "end": "0108" },
+        { "start": "0113", "end": "0117" },
+        { "start": "0127", "end": "0132" },
+        { "start": "0149", "end": "0150" },
+        { "start": "0444", "end": "0448" }
+      ]
+    },
+    "8": {
+      "name": "Jerry",
+      "role": "damage",
+      "team": "BOS",
+      "intervals": [
+        { "start": "0123", "end": "0126" },
+        { "start": "0156", "end": "0156" },
+        { "start": "0172", "end": "0184" },
+        { "start": "0190", "end": "0208" },
+        { "start": "0292", "end": "0297" },
+        { "start": "0299", "end": "0300" },
+        { "start": "0302", "end": "0303" },
+        { "start": "0622", "end": "0634" },
+        { "start": "0717", "end": "0725" }
+      ]
+    },
+    "9": {
+      "name": "Fusions",
+      "role": "tank",
+      "team": "BOS",
+      "intervals": [{ "start": "0076", "end": "0086" }]
+    },
+    "10": {
+      "name": "Myunbong",
+      "role": "support",
+      "team": "BOS",
+      "intervals": [{ "start": "0304", "end": "0306" }]
+    },
+    "11": {
+      "name": "Halo",
+      "role": "support",
+      "team": "BOS",
+      "intervals": [{ "start": "0261", "end": "0269" }]
+    }
+  },
+  "m4_route_66": {
+    "1": {
+      "name": "Danteh",
+      "role": "damage",
+      "team": "HOU",
+      "intervals": [
+        { "start": "0085", "end": "0094" },
+        { "start": "0102", "end": "0123" },
+        { "start": "0155", "end": "0164" },
+        { "start": "0168", "end": "0177" },
+        { "start": "0187", "end": "0190" },
+        { "start": "0197", "end": "0201" },
+        { "start": "0295", "end": "0299" },
+        { "start": "0340", "end": "0344" },
+        { "start": "0436", "end": "0442" }
+      ]
+    },
+    "2": {
+      "name": "Linkzr",
+      "role": "damage",
+      "team": "HOU",
+      "intervals": [
+        { "start": "0047", "end": "0050" },
+        { "start": "0210", "end": "0220" },
+        { "start": "0239", "end": "0247" },
+        { "start": "0485", "end": "0491" },
+        { "start": "0530", "end": "0535" }
+      ]
+    },
+    "3": {
+      "name": "Meko",
+      "role": "tank",
+      "team": "HOU",
+      "intervals": [
+        { "start": "0203", "end": "0206" },
+        { "start": "0492", "end": "0496" }
+      ]
+    },
+    "4": {
+      "name": "Colourhex",
+      "role": "damage",
+      "team": "BOS",
+      "intervals": [
+        { "start": "0253", "end": "0259" },
+        { "start": "0271", "end": "0286" }
+      ]
+    },
+    "5": {
+      "name": "Jerry",
+      "role": "damage",
+      "team": "BOS",
+      "intervals": [
+        { "start": "0425", "end": "0430" },
+        { "start": "0453", "end": "0456" },
+        { "start": "0465", "end": "0480" },
+        { "start": "0497", "end": "0501" },
+        { "start": "0517", "end": "0525" }
+      ]
+    },
+    "6": {
+      "name": "Brussen",
+      "role": "tank",
+      "team": "BOS",
+      "intervals": [{ "start": "0314", "end": "0334" }]
+    }
+  }
+}

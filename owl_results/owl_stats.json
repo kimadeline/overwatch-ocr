@@ -1,0 +1,580 @@
+{
+  "hou_bos_w10_maps": {
+    "m1_lijiang": {
+      "teams": {
+        "HOU": 55.43,
+        "BOS": 44.57
+      },
+      "roles": {
+        "tank": 26.09,
+        "damage": 67.03,
+        "support": 6.88
+      }
+    },
+    "m2_hollywood": {
+      "teams": {
+        "HOU": 31.98,
+        "BOS": 68.02
+      },
+      "roles": {
+        "tank": 6.71,
+        "damage": 87.46,
+        "support": 5.83
+      }
+    },
+    "m3_volskaya": {
+      "teams": {
+        "HOU": 60.25,
+        "BOS": 39.75
+      },
+      "roles": {
+        "tank": 13.04,
+        "damage": 81.99,
+        "support": 4.97
+      }
+    },
+    "m4_route_66": {
+      "teams": {
+        "HOU": 59.62,
+        "BOS": 40.38
+      },
+      "roles": {
+        "tank": 14.42,
+        "damage": 85.58,
+        "support": 0.0
+      }
+    },
+    "total": {
+      "teams": {
+        "HOU": 51.82,
+        "BOS": 48.18
+      },
+      "delta": 3.64,
+      "roles": {
+        "tank": 15.06,
+        "damage": 80.52,
+        "support": 4.42
+      },
+      "winner": "HOU",
+      "balance": ["HOU", "BOS", "HOU", "HOU"]
+    }
+  },
+  "hzs_cdh_w10_maps": {
+    "m1_nepal": {
+      "teams": {
+        "HZS": 64.59,
+        "CDH": 35.41
+      },
+      "roles": {
+        "tank": 31.48,
+        "damage": 60.33,
+        "support": 8.2
+      }
+    },
+    "m2_hollywood": {
+      "teams": {
+        "HZS": 51.41,
+        "CDH": 48.59
+      },
+      "roles": {
+        "tank": 9.04,
+        "damage": 80.6,
+        "support": 10.36
+      }
+    },
+    "m3_hanamura": {
+      "teams": {
+        "HZS": 56.97,
+        "CDH": 43.03
+      },
+      "roles": {
+        "tank": 17.21,
+        "damage": 75.56,
+        "support": 7.23
+      }
+    },
+    "total": {
+      "teams": {
+        "HZS": 57.66,
+        "CDH": 42.34
+      },
+      "delta": 15.32,
+      "roles": {
+        "tank": 19.24,
+        "damage": 72.16,
+        "support": 8.6
+      },
+      "winner": "HZS",
+      "balance": ["HZS", "HZS", "HZS"]
+    }
+  },
+  "phi_par_w10_maps": {
+    "m1_illios": {
+      "teams": {
+        "PHI": 54.85,
+        "PAR": 45.15
+      },
+      "roles": {
+        "tank": 26.14,
+        "damage": 65.54,
+        "support": 8.32
+      }
+    },
+    "m2_hollywood": {
+      "teams": {
+        "PHI": 48.21,
+        "PAR": 51.79
+      },
+      "roles": {
+        "tank": 18.39,
+        "damage": 64.57,
+        "support": 17.04
+      }
+    },
+    "m3_paris": {
+      "teams": {
+        "PHI": 59.5,
+        "PAR": 40.5
+      },
+      "roles": {
+        "tank": 30.53,
+        "damage": 46.11,
+        "support": 23.36
+      }
+    },
+    "m4_dorado": {
+      "teams": {
+        "PHI": 48.1,
+        "PAR": 51.9
+      },
+      "roles": {
+        "tank": 5.82,
+        "damage": 78.75,
+        "support": 15.44
+      }
+    },
+    "m5_oasis": {
+      "teams": {
+        "PHI": 54.55,
+        "PAR": 45.45
+      },
+      "roles": {
+        "tank": 18.51,
+        "damage": 71.1,
+        "support": 10.39
+      }
+    },
+    "total": {
+      "teams": {
+        "PHI": 53.04,
+        "PAR": 46.96
+      },
+      "delta": 6.08,
+      "roles": {
+        "tank": 19.88,
+        "damage": 65.21,
+        "support": 14.91
+      },
+      "winner": "PHI",
+      "balance": ["PHI", "PAR", "PHI", "PAR", "PHI"]
+    }
+  },
+  "van_gzc_w10_maps": {
+    "m1_nepal": {
+      "teams": {
+        "VAN": 41.83,
+        "GZC": 58.17
+      },
+      "roles": {
+        "tank": 37.71,
+        "damage": 51.3,
+        "support": 10.99
+      }
+    },
+    "m2_eichenwalde": {
+      "teams": {
+        "VAN": 50.6,
+        "GZC": 49.4
+      },
+      "roles": {
+        "tank": 33.96,
+        "damage": 55.75,
+        "support": 10.29
+      }
+    },
+    "m3_volskaya": {
+      "teams": {
+        "VAN": 19.45,
+        "GZC": 80.55
+      },
+      "roles": {
+        "tank": 35.26,
+        "damage": 63.83,
+        "support": 0.91
+      }
+    },
+    "total": {
+      "teams": {
+        "VAN": 37.29,
+        "GZC": 62.71
+      },
+      "delta": 25.42,
+      "roles": {
+        "tank": 35.64,
+        "damage": 56.96,
+        "support": 7.4
+      },
+      "winner": "GZC",
+      "balance": ["GZC", "VAN", "GZC"]
+    }
+  },
+  "was_dal_w10_maps": {
+    "m1_illios": {
+      "teams": {
+        "WAS": 36.03,
+        "DAL": 63.97
+      },
+      "roles": {
+        "tank": 16.6,
+        "damage": 68.02,
+        "support": 15.38
+      }
+    },
+    "m2_numbani": {
+      "teams": {
+        "WAS": 35.85,
+        "DAL": 64.15
+      },
+      "roles": {
+        "tank": 29.77,
+        "damage": 64.15,
+        "support": 6.08
+      }
+    },
+    "m3_hanamura": {
+      "teams": {
+        "WAS": 33.94,
+        "DAL": 66.06
+      },
+      "roles": {
+        "tank": 19.27,
+        "damage": 79.82,
+        "support": 0.92
+      }
+    },
+    "total": {
+      "teams": {
+        "WAS": 35.27,
+        "DAL": 64.73
+      },
+      "delta": 29.46,
+      "roles": {
+        "tank": 21.88,
+        "damage": 70.66,
+        "support": 7.46
+      },
+      "winner": "DAL",
+      "balance": ["DAL", "DAL", "DAL"]
+    }
+  },
+  "cdh_van_w10_maps": {
+    "m1_busan": {
+      "teams": {
+        "CDH": 42.2,
+        "VAN": 57.8
+      },
+      "roles": {
+        "tank": 65.12,
+        "damage": 29.27,
+        "support": 5.61
+      }
+    },
+    "m2_eichenwalde": {
+      "teams": {
+        "CDH": 60.19,
+        "VAN": 39.81
+      },
+      "roles": {
+        "tank": 28.4,
+        "damage": 66.05,
+        "support": 5.56
+      }
+    },
+    "m3_volskaya": {
+      "teams": {
+        "CDH": 55.37,
+        "VAN": 44.63
+      },
+      "roles": {
+        "tank": 36.97,
+        "damage": 53.42,
+        "support": 9.61
+      }
+    },
+    "m4_route_66": {
+      "teams": {
+        "CDH": 54.57,
+        "VAN": 45.43
+      },
+      "roles": {
+        "tank": 33.64,
+        "damage": 48.84,
+        "support": 17.52
+      }
+    },
+    "total": {
+      "teams": {
+        "CDH": 53.08,
+        "VAN": 46.92
+      },
+      "delta": 6.16,
+      "roles": {
+        "tank": 41.03,
+        "damage": 49.39,
+        "support": 9.57
+      },
+      "winner": "CDH",
+      "balance": ["VAN", "CDH", "CDH", "CDH"]
+    }
+  },
+  "hou_tor_w10_maps": {
+    "m1_nepal": {
+      "teams": {
+        "HOU": 45.45,
+        "TOR": 54.55
+      },
+      "roles": {
+        "tank": 46.88,
+        "damage": 38.07,
+        "support": 15.06
+      }
+    },
+    "m2_numbani": {
+      "teams": {
+        "HOU": 46.61,
+        "TOR": 53.39
+      },
+      "roles": {
+        "tank": 19.83,
+        "damage": 60.66,
+        "support": 19.5
+      }
+    },
+    "m3_paris": {
+      "teams": {
+        "HOU": 46.94,
+        "TOR": 53.06
+      },
+      "roles": {
+        "tank": 30.48,
+        "damage": 53.23,
+        "support": 16.29
+      }
+    },
+    "m4_rialto": {
+      "teams": {
+        "HOU": 64.62,
+        "TOR": 35.38
+      },
+      "roles": {
+        "tank": 15.59,
+        "damage": 78.98,
+        "support": 5.43
+      }
+    },
+    "m5_lijiang": {
+      "teams": {
+        "HOU": 44.24,
+        "TOR": 55.76
+      },
+      "roles": {
+        "tank": 17.28,
+        "damage": 59.45,
+        "support": 23.27
+      }
+    },
+    "total": {
+      "teams": {
+        "HOU": 49.57,
+        "TOR": 50.43
+      },
+      "delta": 0.86,
+      "roles": {
+        "tank": 26.01,
+        "damage": 58.08,
+        "support": 15.91
+      },
+      "winner": "HOU",
+      "balance": ["TOR", "TOR", "TOR", "HOU", "TOR"]
+    }
+  },
+  "phi_atl_w10_maps": {
+    "m1_busan": {
+      "teams": {
+        "PHI": 61.93,
+        "ATL": 38.07
+      },
+      "roles": {
+        "tank": 6.25,
+        "damage": 90.53,
+        "support": 3.22
+      }
+    },
+    "m2_hollywood": {
+      "teams": {
+        "PHI": 55.17,
+        "ATL": 44.83
+      },
+      "roles": {
+        "tank": 14.58,
+        "damage": 68.81,
+        "support": 16.61
+      }
+    },
+    "m3_hanamura": {
+      "teams": {
+        "PHI": 52.85,
+        "ATL": 47.15
+      },
+      "roles": {
+        "tank": 29.28,
+        "damage": 54.59,
+        "support": 16.13
+      }
+    },
+    "m4_dorado": {
+      "teams": {
+        "PHI": 37.77,
+        "ATL": 62.23
+      },
+      "roles": {
+        "tank": 37.53,
+        "damage": 55.82,
+        "support": 6.65
+      }
+    },
+    "m5_illios": {
+      "teams": {
+        "PHI": 43.05,
+        "ATL": 56.95
+      },
+      "roles": {
+        "tank": 28.57,
+        "damage": 61.78,
+        "support": 9.65
+      }
+    },
+    "total": {
+      "teams": {
+        "PHI": 50.15,
+        "ATL": 49.85
+      },
+      "delta": 0.3,
+      "roles": {
+        "tank": 23.24,
+        "damage": 66.31,
+        "support": 10.45
+      },
+      "winner": "PHI",
+      "balance": ["PHI", "PHI", "PHI", "ATL", "ATL"]
+    }
+  },
+  "sfs_gla_w10_maps": {
+    "m1_illios": {
+      "teams": {
+        "SFS": 53.42,
+        "GLA": 46.58
+      },
+      "roles": {
+        "tank": 21.43,
+        "damage": 62.2,
+        "support": 16.37
+      }
+    },
+    "m2_eichenwalde": {
+      "teams": {
+        "SFS": 47.63,
+        "GLA": 52.37
+      },
+      "roles": {
+        "tank": 35.92,
+        "damage": 53.16,
+        "support": 10.92
+      }
+    },
+    "m3_volskaya": {
+      "teams": {
+        "SFS": 49.51,
+        "GLA": 50.49
+      },
+      "roles": {
+        "tank": 29.55,
+        "damage": 56.95,
+        "support": 13.5
+      }
+    },
+    "total": {
+      "teams": {
+        "SFS": 50.19,
+        "GLA": 49.81
+      },
+      "delta": 0.38,
+      "roles": {
+        "tank": 28.97,
+        "damage": 57.44,
+        "support": 13.6
+      },
+      "winner": "SFS",
+      "balance": ["SFS", "GLA", "GLA"]
+    }
+  },
+  "shd_gzc_w10_maps": {
+    "m1_illios": {
+      "teams": {
+        "SHD": 40.81,
+        "GZC": 59.19
+      },
+      "roles": {
+        "tank": 25.27,
+        "damage": 62.43,
+        "support": 12.3
+      }
+    },
+    "m2_hollywood": {
+      "teams": {
+        "SHD": 44.24,
+        "GZC": 55.76
+      },
+      "roles": {
+        "tank": 31.72,
+        "damage": 54.14,
+        "support": 14.14
+      }
+    },
+    "m3_paris": {
+      "teams": {
+        "SHD": 50.72,
+        "GZC": 49.28
+      },
+      "roles": {
+        "tank": 26.48,
+        "damage": 55.98,
+        "support": 17.54
+      }
+    },
+    "total": {
+      "teams": {
+        "SHD": 45.26,
+        "GZC": 54.74
+      },
+      "delta": 9.48,
+      "roles": {
+        "tank": 27.82,
+        "damage": 57.52,
+        "support": 14.66
+      },
+      "winner": "SHD",
+      "balance": ["GZC", "GZC", "SHD"]
+    }
+  }
+}
