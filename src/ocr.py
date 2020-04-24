@@ -13,28 +13,26 @@ from .format_data import trim_name
 
 from . import OUTPUT_ROOT_DIR
 
-# make then env variables
-SUBSCRIPTION_KEY = "<your subscription key>"
-ENDPOINT = "https://<your endpoint>.cognitiveservices.azure.com"
 
-ENDPOINT_LOCATION = "westus2"
-OCR_ENDPOINT = f"{ENDPOINT}/vision/v2.0/recognizeText"
-
-## Add your Computer Vision subscription key to your environment variables.
-# if 'COMPUTER_VISION_SUBSCRIPTION_KEY' in os.environ:
-#     subscription_key = os.environ['COMPUTER_VISION_SUBSCRIPTION_KEY']
-# else:
-#     print("\nSet the COMPUTER_VISION_SUBSCRIPTION_KEY environment variable.\n**Restart your shell or IDE for changes to take effect.**")
-#     sys.exit()
-# # Add your Computer Vision endpoint to your environment variables.
-# if 'COMPUTER_VISION_ENDPOINT' in os.environ:
-#     endpoint = os.environ['COMPUTER_VISION_ENDPOINT']
-# else:
-#     print("\nSet the COMPUTER_VISION_ENDPOINT environment variable.\n**Restart your shell or IDE for changes to take effect.**")
-#     sys.exit()
+# Add your Computer Vision subscription key to your environment variables.
+if "COMPUTER_VISION_SUBSCRIPTION_KEY" in os.environ:
+    subscription_key = os.environ["COMPUTER_VISION_SUBSCRIPTION_KEY"]
+else:
+    print(
+        "\nSet the COMPUTER_VISION_SUBSCRIPTION_KEY environment variable.\n**Restart your shell or IDE for changes to take effect.**"
+    )
+    sys.exit()
+# Add your Computer Vision endpoint to your environment variables.
+if "COMPUTER_VISION_ENDPOINT" in os.environ:
+    endpoint = os.environ["COMPUTER_VISION_ENDPOINT"]
+else:
+    print(
+        "\nSet the COMPUTER_VISION_ENDPOINT environment variable.\n**Restart your shell or IDE for changes to take effect.**"
+    )
+    sys.exit()
 
 computervision_client = ComputerVisionClient(
-    ENDPOINT, CognitiveServicesCredentials(SUBSCRIPTION_KEY)
+    endpoint, CognitiveServicesCredentials(subscription_key)
 )
 
 

@@ -35,8 +35,13 @@ What you'll need:
 ## Usage ⚒
 
 - Copy your video files to the `input` folder
-- Update the `GAMES_LIST` variable in `src/__init__.py` to be the list of the videos you want to parse (don't include the extension)
-- `python main.py` (this might take a while because I make unoptimized, throttled Azure OCR calls)
+- Update the `GAMES_LIST` variable in `src/__init__.py` to be the list of the videos you want to parse (don't include the extension, but if it's not an mp4 file update L.12 of `filename.py`)
+- Save your Azure subscription key and endpoint somewhere:
+  - Option 1: Add your subscription key and your endpoint to a `.env` file at the root of the repo
+  - Option 1: Write them directly in `ocr.py`
+- Run everything (this might take a while because I make unoptimized, throttled Azure OCR calls)
+  - If you followed option 1 from above, launch the `Python: Main script` configuration (you can't use the run button because of [this issue](https://github.com/microsoft/vscode-python/issues/11174))
+  - Otherwise, use the run button in the top-right corner, or call `python main.py` directly
 - _⚠️ Make sure your computer doesn't go to sleep_
 - Profit 🥳
 
