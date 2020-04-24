@@ -64,17 +64,28 @@ def get_player(player):
     return players.get(Players.name == player)
 
 
-def get_players(country):
-    """Given a country shorthand or a list of country shorthand names, 
-    gets the players for this country."""
-    players = owwc_info.table("players")
-    Players = Query()
-    return players.search(Players.team.one_of(country))
+def get_players(teams_list):
+    """Given a list of team shorthand names, 
+    returns the players for all teams in one big list."""
+
+    teams = team_info.table("teams")
+    Team = Query()
+    result = []
+
+    for t in teams_list:
+        roles = teams.get(Team.shorthand == t)["players"]
+        result += [{"name": p, "role": "damage", "team": t} for p in roles["damage"]]
+        result += [{"name": p, "role": "tank", "team": t} for p in roles["tank"]]
+        result += [{"name": p, "role": "support", "team": t} for p in roles["support"]]
+
+    return result
 
 
 def get_frames(player, table=game_db):
     """Returns a sorted list of frame numbers in which the player POV was visible on-screen."""
     Frames = Query()
-    player_frames = table.search(Frames.player.matches(player, flags=re.IGNORECASE))
+    player_frames = table.search(
+        Frames.player.matches(player["name"], flags=re.IGNORECASE)
+    )
 
     return sorted([f["frame"] for f in player_frames])

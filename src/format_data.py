@@ -36,19 +36,34 @@ def get_intervals(player, map_db_table):
     return result
 
 
-def get_pov_data(countries):
-    """Return the screen time of all players in this game in a dictionary of
-    player handle keys and arrays of start/end intervals."""
-    players = get_players(countries)
-    for p in players:
-        p["intervals"] = get_intervals(p["name"])
+def get_pov_data(players, table):
+    """
+    Return the screen time of all players in this game in a dictionary of player handle keys 
+    and arrays of start/end intervals.
+    """
+    intervals = []
 
-    filtered = filter(lambda p: p["intervals"] is not None, players)
+    for p in players:
+        p["intervals"] = get_intervals(p, table)
+        intervals.append(p)
+
+    filtered = filter(lambda i: i["intervals"] is not None, intervals)
 
     return list(filtered)
 
 
-def parse_player_intervals(map_round):
-    print(f"parse player intervals for {map_round}")
-    players = get_pov_data(["USA", "CHN"])
-    save_player_intervals(map_round, players)
+def parse_player_intervals(game_map, teams):
+    print(f"parse player intervals for {game_map}")
+    all_players = get_players(teams)
+
+    game_db = initialize_db(game_map)
+    maps_set = game_db.tables()
+    maps_set.discard("_default")
+
+    pov_db = initialize_db(f"{game_map}_pov")
+    purge_db(pov_db)
+
+    for map_name in maps_set:
+        map_table = game_db.table(map_name)
+        pov_data = get_pov_data(all_players, map_table)
+        save_player_intervals(map_name, pov_data, pov_db)

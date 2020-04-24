@@ -68,9 +68,8 @@ def add_role_stats(role, count=1):
     stats["roles"][role] += count
 
 
-# USA / CHN
 def compute_game_stats(pov_data):
-    for player_data in pov_data:
+    for player_data in pov_data.values():
         for interval in player_data["intervals"]:
             start = int(interval["start"])
             end = int(interval["end"]) + 1
@@ -103,7 +102,8 @@ def get_datapoints(pov_data, type):
     y = []
     text = []
     color = []
-    for player in pov_data:
+
+    for player in pov_data.values():
         player_datapoints = (
             role_datapoints(player) if type == "ROLE" else team_datapoints(player)
         )
