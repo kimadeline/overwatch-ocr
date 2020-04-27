@@ -38,7 +38,7 @@ computervision_client = ComputerVisionClient(
 
 def detect_printed_text(video_name, image_path, video_db):
     print(f"detect_printed_text for {image_path}")
-    # image_path = "/Users/kimiguel/Documents/Sandbox/owl-ocr/output/sk_usa_720p/cropped/frame0031_player.png"
+
     frame_nb = os.path.basename(image_path)[5:9]
     with open(image_path, "rb") as image_stream:
         recognize_printed_results = computervision_client.batch_read_file_in_stream(
@@ -75,15 +75,10 @@ def detect_printed_text(video_name, image_path, video_db):
                 print(f"No player pov in frame {frame_nb}")
 
 
-def read_video_frames(video_name, video_path, match_name):
+def read_video_frames(video_name, video_path="", match_name=None):
     print(f"read video frames for {video_name}")
 
-    # If parsing one game per db: pyrbe db,
-    # Otherwise initialize an existing db with a table for the game
-    if match_name:
-        video_db = initialize_db(match_name)
-    else:
-        purge_db()
+    video_db = initialize_db(match_name)
 
     frames_folder = os.path.join(OUTPUT_ROOT_DIR, video_path, video_name, "cropped")
     count = 0

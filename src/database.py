@@ -23,10 +23,15 @@ def purge_db(db_name=game_db):
     db_name.purge_tables()
     db_name.purge()
 
+    return db_name
+
 
 def initialize_db(video_name):
-    db_path = os.path.join("data", f"{video_name}.json")
-    video_db = TinyDB(db_path)
+    if video_name:
+        db_path = os.path.join("data", f"{video_name}.json")
+        video_db = TinyDB(db_path)
+    else:
+        video_db = game_db
     return video_db
 
 

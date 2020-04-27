@@ -25,7 +25,7 @@ def crop_player_name(image_path, dest_folder):
     print(f"Cropped the player name for {image_name}")
 
 
-def crop_video_frames(video_name, video_path=None):
+def crop_video_frames(video_name, video_path=""):
     print(f"crop video frames for {video_path}/{video_name}")
     frames_folder = os.path.join(OUTPUT_ROOT_DIR, video_path, video_name, "frames")
     dest_folder = os.path.join(OUTPUT_ROOT_DIR, video_path, video_name, "cropped")

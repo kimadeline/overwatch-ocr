@@ -11,7 +11,7 @@ from . import INPUT_DIR, OUTPUT_ROOT_DIR, ROOT_DIR
 logging.basicConfig(level=logging.INFO)
 
 
-def split_video_frames(video_name, video_path=None):
+def split_video_frames(video_name, video_path=""):
     print(f"split video frames for {video_name}")
     output_dir = os.path.join(
         OUTPUT_ROOT_DIR, video_path, video_name.rpartition(".")[0], "frames"
