@@ -69,7 +69,7 @@ def add_role_stats(role, count=1):
 
 
 def compute_game_stats(pov_data):
-    for player_data in pov_data.values():
+    for player_data in pov_data:
         for interval in player_data["intervals"]:
             start = int(interval["start"])
             end = int(interval["end"]) + 1
@@ -103,7 +103,7 @@ def get_datapoints(pov_data, type):
     text = []
     color = []
 
-    for player in pov_data.values():
+    for player in pov_data:
         player_datapoints = (
             role_datapoints(player) if type == "ROLE" else team_datapoints(player)
         )
@@ -178,7 +178,7 @@ def generate_graph(datapoints):
     return fig
 
 
-def display_graph(filepath="data/_pov_data.json"):
+def display_graph(filepath="data/pov_data.json"):
     with open(filepath) as p:
         pov_data = json.load(p)
 
@@ -192,7 +192,7 @@ def display_graph(filepath="data/_pov_data.json"):
     figure.show()
 
 
-def display_dashboard(filepath="data/_pov_data.json"):
+def display_dashboard(filepath="data/pov_data.json"):
     with open(filepath) as p:
         pov_data = json.load(p)
 
@@ -200,4 +200,6 @@ def display_dashboard(filepath="data/_pov_data.json"):
     team_stats = compute_team_stats("USA", "CHN")
     role_stats = compute_role_stats()
 
-    start_dashboard_server(pov_data, team_stats, role_stats)
+    start_dashboard_server(
+        pov_data, team_stats, role_stats, "USA vs China - OWWC 2019", "all maps"
+    )
