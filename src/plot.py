@@ -193,7 +193,10 @@ def display_graph(filepath="data/phi_atl_w10_maps_pov.json", map_name="m2_hollyw
 
 
 def display_dashboard(
-    filepath="data/phi_atl_w10_maps_pov.json", map_name="m2_hollywood"
+    filepath="data/phi_atl_w10_maps_pov.json",
+    map_name="m2_hollywood",
+    title="Philadelphia Fusion vs Atlanta Reign",
+    subtitle="Map 2: Hollywood",
 ):
     with open(filepath) as p:
         pov_data = json.load(p)
@@ -202,10 +205,5 @@ def display_dashboard(
     team_stats = compute_team_stats("PHI", "ATL")
     role_stats = compute_role_stats()
 
-    start_dashboard_server(
-        pov_data[map_name],
-        team_stats,
-        role_stats,
-        "Philadelphia Fusion vs Atlanta Reign",
-        "Map 2: Hollywood",
-    )
+    start_dashboard_server(pov_data[map_name], team_stats, role_stats, title, subtitle)
+

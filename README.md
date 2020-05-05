@@ -1,10 +1,10 @@
 # Decoding the narrative in competitive Overwatch broadcasts
 
-Code for the PyCon US 2020 presentation `Decoding bias and narrative in competitive video games broadcasts with video analysis`. 
+Code for the PyCon US 2020 presentation `Decoding bias and narrative in competitive video games broadcasts with video analysis`.
 
 ✨ Slides: https://aka.ms/pycon2020-overwatch
 
-🗓 PyCon US schedule description: https://us.pycon.org/2020/schedule/presentation/107/ 
+🗓 PyCon US schedule description: https://us.pycon.org/2020/schedule/presentation/107/
 
 ## Installation 🏗
 
@@ -33,6 +33,16 @@ What you'll need:
   - `data`: Where we will store JSON files containing player names extracted from each frame, and also the reference teams file
 
 ## Usage ⚒
+
+### Quickstart with existing OWL results data (PyCon 2020)
+
+To visualize graphs for the OWL matches I used to compute the stats in my PyCon talk:
+
+- Copy the `*_pov.json` files to the `data` folder
+- Update the arguments to the `display_dasboard` functions
+- ✨ `python main.py` ✨
+
+### Other OW broadcasts
 
 - Copy your video files to the `input` folder
 - Update the `GAMES_LIST` variable in `src/__init__.py` to be the list of the videos you want to parse (don't include the extension)
