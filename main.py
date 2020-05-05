@@ -1,5 +1,3 @@
-import os
-
 from src import GAMES_LIST
 from src.crop import crop_video_frames
 from src.format_data import parse_player_intervals
