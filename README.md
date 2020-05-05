@@ -34,6 +34,17 @@ What you'll need:
 
 ## Usage ⚒
 
+### Quickstart with existing OWL results data (PyCon 2020)
+
+To visualize graphs for the OWL matches I used to compute the stats in my PyCon talk:
+
+- Pull the `owl_2020` branch of this repo
+- Copy the `owl_results/*_pov.json` files to the `data` folder
+- Update the arguments of the `display_dasboard` function in `main.py`
+- ✨ `python main.py` ✨
+
+### Other OW broadcasts
+
 - Copy your video files to the `input` folder
 - Update the `GAMES_LIST` variable in `src/__init__.py` to be the list of the videos you want to parse (don't include the extension, but if it's not an mp4 file update L.12 of `filename.py`)
 - Save your Azure subscription key and endpoint somewhere:
