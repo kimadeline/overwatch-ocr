@@ -38,8 +38,8 @@ What you'll need:
 
 To visualize graphs for the OWL matches I used to compute the stats in my PyCon talk:
 
-- Copy the `*_pov.json` files to the `data` folder
-- Update the arguments to the `display_dasboard` functions
+- Copy the `owl_results/*_pov.json` files to the `data` folder
+- Update the arguments of the `display_dashboard` function in `main.py`
 - ✨ `python main.py` ✨
 
 ### Other OW broadcasts
