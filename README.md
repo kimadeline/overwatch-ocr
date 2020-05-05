@@ -40,7 +40,7 @@ To visualize graphs for the OWL matches I used to compute the stats in my PyCon 
 
 - Pull the `owl_2020` branch of this repo
 - Copy the `owl_results/*_pov.json` files to the `data` folder
-- Update the arguments of the `display_dasboard` function in `main.py`
+- Update the arguments of the `display_dashboard` function in `main.py`
 - ✨ `python main.py` ✨
 
 ### Other OW broadcasts
