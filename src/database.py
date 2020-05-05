@@ -70,7 +70,7 @@ def get_player(player):
 
 
 def get_players(teams_list):
-    """Given a list of team shorthand names, 
+    """Given a list of team shorthand names,
     returns the players for all teams in one big list."""
 
     teams = team_info.table("teams")
@@ -87,7 +87,8 @@ def get_players(teams_list):
 
 
 def get_frames(player, table=game_db):
-    """Returns a sorted list of frame numbers in which the player POV was visible on-screen."""
+    """Returns a sorted list of frame numbers
+    in which the player POV was visible on-screen."""
     Frames = Query()
     player_frames = table.search(
         Frames.player.matches(player["name"], flags=re.IGNORECASE)

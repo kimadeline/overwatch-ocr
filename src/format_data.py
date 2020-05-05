@@ -14,7 +14,8 @@ def trim_name(player_name):
 
 def get_intervals(player, map_db_table):
     """
-    Return a list of start and end intervals where the player POV was visible on-screen for a given map. 
+    Return a list of start and end intervals where the player POV was visible on-screen
+    for a given map.
     Parameters: player name, and map (either a database or a table)
     """
     frames = get_frames(player, map_db_table)
@@ -38,8 +39,8 @@ def get_intervals(player, map_db_table):
 
 def get_pov_data(players, table):
     """
-    Return the screen time of all players in this game in a dictionary of player handle keys 
-    and arrays of start/end intervals.
+    Return the screen time of all players in this game in a dictionary of player handle
+    keys and arrays of start/end intervals.
     """
     intervals = []
 
@@ -56,7 +57,7 @@ def parse_player_intervals(game_map, teams):
     print(f"parse player intervals for {game_map}")
     all_players = get_players(teams)
 
-    game_db = initialize_db(game_map)
+    game_db = initialize_db("bos_was_game")
     maps_set = game_db.tables()
     maps_set.discard("_default")
 
