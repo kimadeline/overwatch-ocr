@@ -8,7 +8,7 @@ from azure.cognitiveservices.vision.computervision.models import (
 )
 from msrest.authentication import CognitiveServicesCredentials
 
-from .database import initialize_db, purge_db, save_player_pov
+from .database import initialize_db, save_player_pov
 from .format_data import trim_name
 
 from . import OUTPUT_ROOT_DIR
@@ -19,7 +19,8 @@ if "COMPUTER_VISION_SUBSCRIPTION_KEY" in os.environ:
     subscription_key = os.environ["COMPUTER_VISION_SUBSCRIPTION_KEY"]
 else:
     print(
-        "\nSet the COMPUTER_VISION_SUBSCRIPTION_KEY environment variable.\n**Restart your shell or IDE for changes to take effect.**"
+        """\nSet the COMPUTER_VISION_SUBSCRIPTION_KEY environment variable.
+        **Restart your shell or IDE for changes to take effect.**"""
     )
     sys.exit()
 # Add your Computer Vision endpoint to your environment variables.
@@ -27,7 +28,8 @@ if "COMPUTER_VISION_ENDPOINT" in os.environ:
     endpoint = os.environ["COMPUTER_VISION_ENDPOINT"]
 else:
     print(
-        "\nSet the COMPUTER_VISION_ENDPOINT environment variable.\n**Restart your shell or IDE for changes to take effect.**"
+        """\nSet the COMPUTER_VISION_ENDPOINT environment variable.
+        **Restart your shell or IDE for changes to take effect.**"""
     )
     sys.exit()
 
