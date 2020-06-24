@@ -1,12 +1,11 @@
 import os
-import sys
 import time
 
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
 from msrest.authentication import CognitiveServicesCredentials
 
-from .database import initialize_db, purge_db, save_player_pov
+from .database import initialize_db, save_player_pov
 from .format_data import trim_name
 
 from . import OUTPUT_ROOT_DIR

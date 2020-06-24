@@ -20,8 +20,7 @@ pov_db = TinyDB(POV_DATABASE)
 
 
 def purge_db(db_name=game_db):
-    db_name.purge_tables()
-    db_name.purge()
+    db_name.drop_tables()
 
 
 def initialize_db(video_name):

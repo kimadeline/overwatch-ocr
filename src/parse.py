@@ -6,7 +6,7 @@ import os
 
 import ffmpeg
 
-from . import INPUT_DIR, OUTPUT_ROOT_DIR, ROOT_DIR
+from . import INPUT_DIR, OUTPUT_ROOT_DIR
 
 logging.basicConfig(level=logging.INFO)
 
