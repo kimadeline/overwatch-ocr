@@ -21,16 +21,22 @@ ENDPOINT_LOCATION = "westus2"
 OCR_ENDPOINT = f"{ENDPOINT}/vision/v2.0/recognizeText"
 
 ## Add your Computer Vision subscription key to your environment variables.
-# if 'COMPUTER_VISION_SUBSCRIPTION_KEY' in os.environ:
-#     subscription_key = os.environ['COMPUTER_VISION_SUBSCRIPTION_KEY']
+# if "COMPUTER_VISION_SUBSCRIPTION_KEY" in os.environ:
+#     subscription_key = os.environ["COMPUTER_VISION_SUBSCRIPTION_KEY"]
 # else:
-#     print("\nSet the COMPUTER_VISION_SUBSCRIPTION_KEY environment variable.\n**Restart your shell or IDE for changes to take effect.**")
+#     print(
+#         """\nSet the COMPUTER_VISION_SUBSCRIPTION_KEY environment variable.
+# **Restart your shell or IDE for changes to take effect.**"""
+#     )
 #     sys.exit()
 # # Add your Computer Vision endpoint to your environment variables.
-# if 'COMPUTER_VISION_ENDPOINT' in os.environ:
-#     endpoint = os.environ['COMPUTER_VISION_ENDPOINT']
+# if "COMPUTER_VISION_ENDPOINT" in os.environ:
+#     endpoint = os.environ["COMPUTER_VISION_ENDPOINT"]
 # else:
-#     print("\nSet the COMPUTER_VISION_ENDPOINT environment variable.\n**Restart your shell or IDE for changes to take effect.**")
+#     print(
+#         """\nSet the COMPUTER_VISION_ENDPOINT environment variable.
+# **Restart your shell or IDE for changes to take effect.**"""
+#     )
 #     sys.exit()
 
 computervision_client = ComputerVisionClient(
