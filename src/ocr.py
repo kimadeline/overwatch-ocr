@@ -5,7 +5,7 @@ from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
 from msrest.authentication import CognitiveServicesCredentials
 
-from .database import initialize_db, save_player_pov
+from .database import initialize_db, purge_db, save_player_pov
 from .format_data import trim_name
 
 from . import OUTPUT_ROOT_DIR
@@ -17,7 +17,7 @@ ENDPOINT = "https://<your endpoint>.cognitiveservices.azure.com"
 ENDPOINT_LOCATION = "westus2"
 OCR_ENDPOINT = f"{ENDPOINT}/vision/v2.0/recognizeText"
 
-## Add your Computer Vision subscription key to your environment variables.
+# Add your Computer Vision subscription key to your environment variables.
 # if "COMPUTER_VISION_SUBSCRIPTION_KEY" in os.environ:
 #     subscription_key = os.environ["COMPUTER_VISION_SUBSCRIPTION_KEY"]
 # else:
@@ -43,7 +43,7 @@ computervision_client = ComputerVisionClient(
 
 def detect_printed_text(video_name, image_path, video_db):
     print(f"detect_printed_text for {image_path}")
-    # image_path = "/Users/kimiguel/Documents/Sandbox/owl-ocr/output/sk_usa_720p/cropped/frame0031_player.png"
+    # image_path = "~/Documents/Sandbox/owl-ocr/output/m1_busan/cropped/frame0031_player.png"
     frame_nb = os.path.basename(image_path)[5:9]
     with open(image_path, "rb") as image_stream:
         recognize_printed_results = computervision_client.read_in_stream(
