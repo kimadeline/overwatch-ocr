@@ -3,9 +3,7 @@ import sys
 import time
 
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
-from azure.cognitiveservices.vision.computervision.models import (
-    TextOperationStatusCodes,
-)
+from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
 from msrest.authentication import CognitiveServicesCredentials
 
 from .database import initialize_db, save_player_pov
@@ -43,7 +41,7 @@ def detect_printed_text(video_name, image_path, video_db):
 
     frame_nb = os.path.basename(image_path)[5:9]
     with open(image_path, "rb") as image_stream:
-        recognize_printed_results = computervision_client.batch_read_file_in_stream(
+        recognize_printed_results = computervision_client.read_in_stream(
             image_stream, raw=True
         )
 
@@ -56,16 +54,14 @@ def detect_printed_text(video_name, image_path, video_db):
 
     # Call the "GET" API and wait for it to retrieve the results
     while True:
-        get_printed_text_results = computervision_client.get_read_operation_result(
-            operation_id
-        )
-        if get_printed_text_results.status not in ["NotStarted", "Running"]:
+        get_printed_text_results = computervision_client.get_read_result(operation_id)
+        if get_printed_text_results.status not in ["notStarted", "running"]:
             break
         time.sleep(1)
 
     # Save detected text
-    if get_printed_text_results.status == TextOperationStatusCodes.succeeded:
-        for text_result in get_printed_text_results.recognition_results:
+    if get_printed_text_results.status == OperationStatusCodes.succeeded:
+        for text_result in get_printed_text_results.analyze_result.read_results:
             if len(text_result.lines) > 0:
                 line = text_result.lines[0]
                 print(

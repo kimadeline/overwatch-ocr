@@ -1,4 +1,4 @@
-azure-cognitiveservices-vision-computervision==0.5.0
+azure-cognitiveservices-vision-computervision==0.6.0
 azure-common==1.1.25
 black==19.10b0
 dash==1.11.0
