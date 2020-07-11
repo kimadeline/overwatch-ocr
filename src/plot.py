@@ -206,4 +206,3 @@ def display_dashboard(
     role_stats = compute_role_stats()
 
     start_dashboard_server(pov_data[map_name], team_stats, role_stats, title, subtitle)
-
