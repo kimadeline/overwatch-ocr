@@ -8,7 +8,7 @@ Code for the PyCon US 2020 presentation `Decoding bias and narrative in competit
 
 ## Installation 🏗
 
-What you'll need:
+What you will need:
 
 - VS Code + [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - Python 3.X
