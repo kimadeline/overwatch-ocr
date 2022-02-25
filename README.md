@@ -6,6 +6,8 @@ Code for the PyCon US 2020 presentation `Decoding bias and narrative in competit
 
 🗓 PyCon US schedule description: https://us.pycon.org/2020/schedule/presentation/107/
 
+Changing something here for the sake of a PR.
+
 ## Installation 🏗
 
 What you will need:

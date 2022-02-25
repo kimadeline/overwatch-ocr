@@ -14,6 +14,8 @@ PLAYER_NAME_AREA = (
 
 
 def crop_player_name(image_path, dest_folder):
+    """Adding a comment for a PR.
+    """
     image_fullname = os.path.basename(image_path)
     image = Image.open(image_path)
 
